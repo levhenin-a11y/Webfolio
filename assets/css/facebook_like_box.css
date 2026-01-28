@@ -1,0 +1,33 @@
+
+
+
+/* To fill the container and nothing else */
+
+.fb-like, .fb-like span, .fb-like.fb_iframe_widget span iframe {
+    width: 100%;
+	padding-bottom: 3px;
+	border-radius: 4px;
+	background-color: transparent;
+	/*background-image: url(../images/about_OLD.jpg);*/
+}
+
+.fb-like.fb_iframe_widget span iframe{
+	margin: 1px 2px 2px 2px;
+	padding-bottom: 0px !important;
+	width: 100% !important;
+	background-color: #fff;
+}
+
+.btn-facebook {
+	/*font-size: 10px; leave it if position is on fixed to make it smaller*/
+    background: #3b5998;
+    border-radius: 1;
+    color: #fff
+}
+.btn-facebook:link, .btn-facebook:visited {
+    color: #fff
+}
+.btn-facebook:active, .btn-facebook:hover {
+    background: #30477a;
+    color: #fff
+}

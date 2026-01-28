@@ -1,0 +1,6 @@
+pour couv galerie BB:
+__
+voir promo_documentation --> carte_visite --> BB_cover_galerie_site.psd
+Sauver en PNG-8 32 couleurs 800x600
+-----------------------------------------------------------------------
+***********************************************************************

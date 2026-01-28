@@ -1,0 +1,45 @@
+#patrons{
+    padding: 7rem;
+    padding-top: 16rem;
+    margin-top: -.1rem;
+    margin-bottom: -.1rem;
+    border-bottom: 2.5px white solid;
+}
+
+.patrons__separation{
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    align-items: center;
+    grid-column-gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.patrons__separation .section-title{
+    margin-bottom: 0;
+}
+
+.patrons__separation::before,
+.patrons__separation::after{
+    content: "";
+    display: block;
+    background-color: currentColor;
+    height: 1.25px;
+    transform: translateY(-.8rem);
+}
+
+
+.patrons__logos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-column-gap: 1.5rem;
+    align-items: center;
+    justify-items: center;
+}
+
+.patrons__logos img{
+    max-height: 5rem;
+    max-width: 100%;
+    /*filter: brightness(85%);*/
+    margin-bottom: 2.6rem;
+    border-radius: .45rem;
+}
