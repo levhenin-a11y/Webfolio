@@ -1,6 +1,26 @@
 /*-----------------------
 ----- Basic Styles -----
 -------------------------*/
+/*skip-to-content link implementation*/
+.skip-to-content {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+    z-index: 999;
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+}
+
+.skip-to-content:focus {
+    left: 6px;      /* Show on keyboard focus */
+    top: 6px;
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+}
 /*-----------------------
 ----- Shares Styles -----
 -------------------------*/
