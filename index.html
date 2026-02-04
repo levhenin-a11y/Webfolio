@@ -1238,7 +1238,7 @@
 					
 
 					<form id="contact-form" class="col-sm-6 col-md-offset-1 scrollimation fade-left d3" action="https://formspree.io/f/xeezwyeg" method="POST" novalidate>
-						<input type="hidden" name="_next" value="https://levhenin-a11y.github.io/Webfolio/thank-you.html" />
+						<!--<input type="hidden" name="_next" value="https://levhenin-a11y.github.io/Webfolio/thank-you.html" />-->
 						
 						<div class="form-group">
 						  <label class="control-label" for="contact-name">Name</label>
@@ -1335,6 +1335,39 @@
 		<script src="https://maps.google.com/maps/api/js?sensor=true"></script>
 		<!--<script src="assets/js/contact.js"></script>-->
 		<script src="assets/js/scripts.js"></script>
+
+		<script>
+		var form = document.getElementById("contact-form");
+		
+		async function handleSubmit(event) {
+			event.preventDefault();
+			var status = document.getElementById("form-status");
+			var data = new FormData(event.target);
+			fetch(event.target.action, {
+				method: form.method,
+				body: data,
+				headers: {
+					'Accept': 'application/json'
+				}
+			}).then(response => {
+				if (response.ok) {
+					// Redirect to thank you page on success
+					window.location.href = "thank-you.html";
+				} else {
+					response.json().then(data => {
+						if (Object.hasOwn(data, 'errors')) {
+							alert("Oops! There was a problem submitting your form");
+						} else {
+							alert("Oops! There was a problem submitting your form");
+						}
+					})
+				}
+			}).catch(error => {
+				alert("Oops! There was a problem submitting your form");
+			});
+		}
+		form.addEventListener("submit", handleSubmit);
+		</script>
 		
 		<script>
 		
