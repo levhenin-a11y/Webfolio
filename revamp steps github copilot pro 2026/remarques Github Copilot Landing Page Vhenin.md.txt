@@ -4,9 +4,9 @@
 -2 **~~No skip-to-content link~~** ~~- Users should be able to skip navigation~~
 -3 **~~Heading hierarchy** - Multiple &lt;h1&gt; tags on the page; use &lt;h2&gt; for section titles~~
 -4 **~~Form accessibility** - Contact form has hidden labels; needs better ARIA attributes~~
--5 **Color contrast** - Some text/background combinations (e.g., light text on colored backgrounds) may not meet WCAG standards
+-5 **~~Color contrast** - Some text/background combinations (e.g., light text on colored backgrounds) may not meet WCAG standards~~
 -6 **Mobile keyboard navigation** - Navigation needs better focus states and keyboard support
--7 **Deprecated charset** - Using ISO-8859-1; should use UTF-8
+-7 **~~Deprecated charset** - Using ISO-8859-1; should use UTF-8~~
 
 **#2 Code Quality & Readability**
 

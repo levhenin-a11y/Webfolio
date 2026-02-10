@@ -105,6 +105,9 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     text-transform:uppercase;
 }
 
+.lowercase {text-transform: none;}
+.small-lowercase { text-transform: none; font-size: 0.7em;}
+
 .section-title{
     margin-top:-20px;
     margin-bottom: 80px;
