@@ -164,10 +164,7 @@
 			<div class="container_park text-center">
 				<span class="shares"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.vhenin.be%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore" title="Share VHENIN VINCENT HENIN Webfolio via Facebook" target="_blank"><i class="fa fa-facebook fa-fw"></i></a></span>
 				<span class="shares"><a href="http://www.tumblr.com/share/link?url=www.vhenin.be&amp;name=VHENIN VINCENT HENIN Webfolio]&amp;description=Vhenin's works: illustration, Comics, Webdesign and Webmastering, Graphical Layout, Storyboard, ..." title="Share VHENIN VINCENT HENIN Webfolio via Tumblr" target="_blank"><i class="fa fa-tumblr fa-fw"></i></a></span>
-					alert("Oops! There was a problem sending your form.");
-					
-			alert("Oops! Il y a eu un problème lors de l'envoi de votre formulaire");
-			alert("Oops! There was a problem sending your form.");
+				<span class="shares"><a href="https://www.linkedin.com/shareArticle?mini=true&url=www.vhenin.be&title=VHENIN VINCENT HENIN Webfolio&summary=Vhenin's works: illustration, Comics, Webdesign and Webmastering, Graphical Layout, Storyboard&source={}" target="_blank" title="Share VHENIN VINCENT HENIN Webfolio sur Linkedin"><i class="fa fa-linkedin fa-fw"></i></a></span>
 				<span class="shares"><a href="http://twitter.com/share?text=VHENIN+VINCENT+HENIN+Webfolio&url=https%3A%2F%2Fwww.vhenin.be" target="_blank" title="Share VHENIN VINCENT HENIN Webfolio via Twitter"><i class="fa fa-twitter fa-fw"></i></a></span>
 				<span class="shares"><a href="http://pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.vhenin.be&description=VHENIN+VINCENT+HENIN+Webfolio" target="_blank"title="Share VHENIN VINCENT HENIN Webfolio on Pinterest"><i class="fa fa-pinterest fa-fw"></i></a></span>
 				<span class="shares"><a href="mailto:?subject=--VHENIN VINCENT HENIN Webfolio--&amp;body=Check%20this%20link" title="Share VHENIN VINCENT HENIN Webfolio via email" target="_blank"><i class="fa fa-envelope fa-fw"></i></a></span>
@@ -1422,13 +1419,13 @@
 					window.location.href = "thank-you.html";
 				} else {
 					response.json().then(function(data) {
-						alert("Oops! There was a problem sending your form.");
+						alert("Oups! Il y a eu un problème lors de l'envoi de votre formulaire");
 						var buttonCopy = button.innerHTML;
 						button.innerHTML = buttonCopy;
 					});
 				}
 			}).catch(function(error) {
-				alert("Oops! There was a problem sending your form.");
+				alert("Oops! Il y a eu un problème lors de l'envoi de votre formulaire");
 				var buttonCopy = button.innerHTML;
 				button.innerHTML = buttonCopy;
 			});
