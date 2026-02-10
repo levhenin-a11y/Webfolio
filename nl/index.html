@@ -34,7 +34,8 @@
 		<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
 		<link rel="stylesheet" href="../assets/css/font-awesome.min.css">
 		<link rel="stylesheet" href="../assets/css/flexslider.css">
-		<link rel="stylesheet" href="../assets/css/styles-4.min.css">
+		<link rel="stylesheet" href="../assets/css/styles-4.css">
+		<!--<link rel="stylesheet" href="../assets/css/styles-4.min.css">-->
 		<link rel="stylesheet" href="../assets/css/facebook_like_box.css">
 		<link rel="stylesheet" href="../assets/css/patrons.css">
 		
@@ -67,7 +68,7 @@
 	</head>
   
 	<body data-spy="scroll" data-target="#main-nav" data-offset="200">
-	
+	<a href="#about" class="skip-to-content">Skip to main content</a>
 		
 		
 		<div id="fb-root"></div>
@@ -204,7 +205,7 @@
 			</div>
 		</section>
 		-->
-		<section id="links" class="add-padding">
+		<section id="links" class="add-padding bg-color2">
 		
 			<div class="container">
 				
@@ -283,7 +284,7 @@
 		<!-- ==============================================
 		VINCENT HENIN
 		=============================================== -->
-		<section id="about" class="add-padding bg-color2">
+		<section id="about" class="add-padding bg-color2 border-bottom-color2">
 		
 			<div class="container">
 				
@@ -1332,20 +1333,107 @@
 		<script src="../assets/js/scripts.js"></script>
 		
 		<script>
+		var form = document.getElementById("contact-form");
 		
-			var mapPoint = {
-					'lat': 40.720099,
-					'lng': -74.005764,
-					'zoom' : 15,
-					'infoText':'<p>250 W Broadway\
-								<br/>New York\
-								<br/>NY 10013</p>',
-					'linkText':'View on Google Maps',
-					'mapAddress':'250 W Broadway, New York, NY 10013',
-					'icon': '../assets/images/pin-dark.png'
-				};
+		async function handleSubmit(event) {
+			event.preventDefault();
 			
-		</script>
+			// Check if form is valid using HTML5 validation
+			if (!form.checkValidity()) {
+				// If not valid, show the browser's validation messages
+				form.reportValidity();
+				return;
+			}
+			
+			// Check for custom required fields
+			var hasError = false;
+			var requiredFields = form.querySelectorAll('.requiredField');
+			
+			// Remove old error messages
+			var oldErrors = form.querySelectorAll('.error-message');
+			oldErrors.forEach(function(error) {
+				error.remove();
+			});
+			
+			// Remove error classes
+			requiredFields.forEach(function(field) {
+				field.classList.remove('inputError');
+			});
+			
+			// Validate each required field
+			requiredFields.forEach(function(field) {
+				var value = field.value.trim();
+				
+				if (value === '') {
+					var errorText = field.getAttribute('data-error-empty');
+					var errorSpan = document.createElement('span');
+					errorSpan.className = 'error-message';
+					errorSpan.style.display = 'none';
+					errorSpan.textContent = errorText + '.';
+					field.parentElement.appendChild(errorSpan);
+					errorSpan.style.display = 'block';
+					field.classList.add('inputError');
+					hasError = true;
+				} else if (field.type === 'email' || field.name === 'email') {
+					var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+					if (!emailReg.test(value)) {
+						var invalidEmail = field.getAttribute('data-error-invalid');
+						var errorSpan = document.createElement('span');
+						errorSpan.className = 'error-message';
+						errorSpan.style.display = 'none';
+						errorSpan.textContent = invalidEmail + '.';
+						field.parentElement.appendChild(errorSpan);
+						errorSpan.style.display = 'block';
+						field.classList.add('inputError');
+						hasError = true;
+					}
+				}
+			});
+			
+			if (hasError) {
+				var button = form.querySelector('button[type="submit"]');
+				var buttonCopy = button.innerHTML;
+				var errorMessage = button.getAttribute('data-error-message');
+				button.innerHTML = '<i class="fa fa-times"></i>' + errorMessage;
+				setTimeout(function() {
+					button.innerHTML = buttonCopy;
+				}, 2000);
+				return;
+			}
+			
+			// If validation passes, show sending message
+			var button = form.querySelector('button[type="submit"]');
+			var sendingMessage = button.getAttribute('data-sending-message');
+			button.innerHTML = '<i class="fa fa-spinner fa-spin"></i>' + sendingMessage;
+			
+			// Submit the form
+			var data = new FormData(form);
+			fetch(form.action, {
+				method: form.method,
+				body: data,
+				headers: {
+					'Accept': 'application/json'
+				}
+			}).then(function(response) {
+				if (response.ok) {
+					// Redirect to thank you page on success
+					window.location.href = "thank-you.html";
+				} else {
+					response.json().then(function(data) {
+						alert("Oops! Il y a eu un problème lors de l'envoi de votre formulaire");
+						var buttonCopy = button.innerHTML;
+						button.innerHTML = buttonCopy;
+					});
+				}
+			}).catch(function(error) {
+				alert("Oops! Il y a eu un problème lors de l'envoi de votre formulaire");
+				var buttonCopy = button.innerHTML;
+				button.innerHTML = buttonCopy;
+			});
+		}
+		
+		form.addEventListener("submit", handleSubmit);
+	</script>
 
 
 		

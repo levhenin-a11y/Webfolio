@@ -68,7 +68,7 @@ body{
 	font-family: 'Lato', sans-serif;
     font-size:16px;
     font-weight:400;
-    color:#6d6d6d;
+    color:#4a4a4a;
 	overflow-x:hidden;
 }
 
@@ -125,44 +125,44 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 -------------------------*/
 
 .bg-color1{
-    color:#fff;
-    background:#7CD3C8; /*not used*/
+    color:#1a1e47;
+    background:#a5e0e4; /*darkened for WCAG contrast*/
 }
 
 .bg-color2{
-    color:#fff;
-    background: #7cd988;/*before #BFDBA7 and #89E389*/
+    color:#262626;
+    background:#3FD17C; /*darkened for WCAG contrast*/
 }
 
 .bg-color3{
     color:#fff;
-    background:#a0a9ed!important;/*before #334959*/
+    background:#5e6db6!important; /*darkened for WCAG contrast*/
 }
 
 .border-bottom-color2{
-    border-bottom:7px solid #b5bae0;
+    border-bottom:7px solid #d0d4e7;
 }
 
 .border-top-color2{
-    border-top:7px solid #b5bae0;
+    border-top:7px solid #d0d4e7;
 }
 
 .color1 .service-icon,
 .color1.service-item ul li:nth-child(2):before{
-    background:#7cd988;/*before #7CD3C8*/
+    background:#3FD17C; /*darkened for icon contrast*/
 }
 
 .color1 .service-icon:after{
-    border:3px solid #7CD3C8;
+    border:3px solid #2f7a3f;
 }
 
 .color2 .service-icon,
 .color2.service-item ul li:nth-child(2):before{
-    background:#BFDBA7;
+    background:#2d6f6a; /*darkened for icon contrast*/
 }
 
 .color2 .service-icon:after{
-    border:3px solid #BFDBA7;
+    border:3px solid #2d6f6a;
 }
 
 .color3 .service-icon,
@@ -181,13 +181,13 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 .btn-color1,
 .btn-color2{
     padding: 10px 5%;
-    color: #748dc7;
+    color:#fff;
     font-size: 21px;
     font-weight: 400;
-    background: #89e389 !important;
+    background:#2b4a8a !important;
     outline: none !important;
     border-radius: 45px;
-    border-color: #748dc7;
+    border-color:#fff;
     border-width: 2px;
     transition: opacity .2s ease-out;
 }
@@ -196,7 +196,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 .btn-color1:hover,
 .btn-color2:hover{
     color:#fff;
-	background: #748dc7 !important;
+	background:#2b4a8a !important;
     opacity: 0.9;
 }
 
@@ -287,7 +287,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 }
 
 #main-nav.scrolled .navbar-brand{
-    color:#6d6d6d;
+    color:#4a4a4a;
 }
 
 #main-nav{
@@ -304,12 +304,12 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 }
 
 #main-nav.scrolled .navbar-toggle{
-    color:#6d6d6d;/*/#74c7d5*/
+    color:#4a4a4a;/*/#74c7d5*/
     border-color: none;/*#74c7d5*/
 }
 
 #main-nav.scrolled .navbar-toggle .icon-bar{
-    background:#6d6d6d;/*#74c7d5;*/
+    background:#4a4a4a;/*#74c7d5;*/
 }
 
 #main-nav .container{
@@ -337,7 +337,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 #main-nav.scrolled .nav a,
 #main-nav.scrolled .nav a:active,
 #main-nav.scrolled .nav a:hover{
-    color:#6d6d6d;
+    color:#4a4a4a;
 }
 
 #main-nav li{
@@ -607,7 +607,7 @@ span.fa-star, span.fa-star-half-o, span.fa-star-o {
 
 #portfolio{
     padding-top:70px;
-    background:url('./images/bg-portfolio.jpg') no-repeat #a0a9ed fixed;/*before #B5BAE0*/
+    background:url('./images/bg-portfolio.jpg') no-repeat #4b559a fixed;/*before #B5BAE0*/
     background-size:cover;
     color:#fff;
 }
@@ -675,7 +675,8 @@ span.fa-star, span.fa-star-half-o, span.fa-star-o {
 
 #filter-works ul li.active a,
 #filter-works ul li:hover a{
-    color:#686D99; /*before #7CD3C8*/
+    color:#fff;
+    text-decoration: underline;
 }
 
 .masonry-wrapper{
@@ -747,7 +748,7 @@ span.fa-star, span.fa-star-half-o, span.fa-star-o {
     height:100%;
     top:0;
     left:0;
-    background:#7CD3C8;
+    background:#2d6f6a;
     opacity: 0;
     filter:alpha(opacity=0);
     -webkit-transition:all 0.3s ease-out;
@@ -1190,6 +1191,11 @@ span.fa-star, span.fa-star-half-o, span.fa-star-o {
     background: #89E389;/*before #1f2c37*/
 }
 
+#main-footer p a:last-child{
+    color:#fff;
+    text-decoration: underline;
+}
+
 .social-links {
     list-style:none;
     margin:0;
@@ -1208,14 +1214,13 @@ span.fa-star, span.fa-star-half-o, span.fa-star-o {
 
 .social-links li a {
     display:block;
-    color:#fff;
-    color:rgba(255,255,255,0.3);
+    color:rgba(255,255,255,0.69);
     font-size:21px;
     width:50px;
     height:50px;
     line-height:50px;
     text-align:center;
-    background:rgba(0,0,0,0.2);
+    background:rgba(55,65,109,0.75);
     border-radius:50%;
     -webkit-transition:all .3s ease-out;
     transition:all .3s ease-out;
@@ -1418,7 +1423,7 @@ div.fi_linkedin:hover, .social-links li.fi_linkedin a:hover{
 }
 .lang-in-menu{
 	padding-left: 12%;
-	color: #6d6d6d;
+    color: #4a4a4a;
 }
 /*----------------------
 ----- Media Queries ----
@@ -1426,13 +1431,6 @@ div.fi_linkedin:hover, .social-links li.fi_linkedin a:hover{
 
 @media (max-width:991px){
     
-    .big-text{
-        font-size:48px;
-        line-height:52px;
-        letter-spacing:0.01em;
-        word-spacing: 0.15em;
-    }
-
     #main-nav .nav a,
     #main-nav .nav a:active,
     #main-nav .nav a:hover{
@@ -1510,8 +1508,8 @@ div.fi_linkedin:hover, .social-links li.fi_linkedin a:hover{
     }
     
     .big-text{
-        font-size:38px;
-        line-height:42px;
+        font-size:46px;
+        line-height:50px;
     }
     
     .section-title{
@@ -1527,7 +1525,7 @@ div.fi_linkedin:hover, .social-links li.fi_linkedin a:hover{
     #main-nav .navbar-toggle{
         margin-bottom: 5px;
         margin-top: 5px;
-        color:#6d6d6d;
+        color:#4a4a4a;
         border-color:transparent !important;
     }
 
@@ -1536,7 +1534,7 @@ div.fi_linkedin:hover, .social-links li.fi_linkedin a:hover{
         width: 28px;
         height: 4px;
         margin-top: 0;
-        background:#6d6d6d !important;
+        background:#4a4a4a !important;
     }
 
 
@@ -1554,7 +1552,7 @@ div.fi_linkedin:hover, .social-links li.fi_linkedin a:hover{
     #main-nav .nav a:hover{
         line-height: 42px;
         text-align: center;
-        color: #6d6d6d;
+        color: #4a4a4a;
     }
 
     #main-nav .nav li.active a,
@@ -1565,7 +1563,7 @@ div.fi_linkedin:hover, .social-links li.fi_linkedin a:hover{
     #main-nav .navbar-brand{
         padding-top: 5px;
        font-size: 11px;/*change before 21px*/
-        color:#6d6d6d;
+        color:#4a4a4a;
     }
     
     #main-nav .navbar-brand img{
@@ -1650,6 +1648,5 @@ div.fi_linkedin:hover, .social-links li.fi_linkedin a:hover{
     .project-item .hover-mask .project-title {
         margin-top:15%;
     }
-	h2{font-size: 23px !important;}
 	.project-item p{font-size: 18px !important;}
 } 
