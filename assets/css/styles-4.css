@@ -610,13 +610,13 @@ span.fa-star, span.fa-star-half-o, span.fa-star-o {
 
 #portfolio{
     padding-top:70px;
-    background:url('./images/bg-portfolio.jpg') no-repeat #4b559a fixed;/*before #B5BAE0*/
+    background:url('../images/bg-portfolio.jpg') no-repeat #4b559a fixed;/*before #B5BAE0*/
     background-size:cover;
     color:#fff;
 }
 
 .touch #portfolio{
-    background:#B5BAE0;
+    background:#4b559a;/*before #B5BAE0*/
 }
 
 #filter-works ul {
