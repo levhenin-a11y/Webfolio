@@ -98,7 +98,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 
 .big-text{
     font-size:58px;
-    font-weight:400;
+    font-weight:700;
     line-height:62px;
     letter-spacing:0.01em;
     word-spacing: 0.15em;
@@ -107,6 +107,27 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 
 .lowercase {text-transform: none;}
 .small-lowercase { text-transform: none; font-size: 0.7em;}
+.small-inline-ampersand { font-size: small; }
+
+.clear-both-spacer {
+    clear: both;
+}
+
+.project-preview-heading-mb-55 {
+    margin-bottom: 5.5%;
+}
+
+.project-preview-heading-mb-45 {
+    margin-bottom: 4.5%;
+}
+
+.project-preview-heading-mb-85 {
+    margin-bottom: 8.5%;
+}
+
+.thank-you-back-link {
+    margin-top: 30px;
+}
 
 .section-title{
     margin-top:-20px;
@@ -354,6 +375,19 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     color: #BFDBA7;
 }
 
+#main-nav .nav a:focus,
+#main-nav .nav a:focus-visible,
+#main-nav .navbar-brand:focus,
+#main-nav .navbar-brand:focus-visible,
+#main-nav .navbar-toggle:focus,
+#main-nav .navbar-toggle:focus-visible,
+#main-nav .dropdown-item:focus,
+#main-nav .dropdown-item:focus-visible{
+    outline: 2px solid #BFDBA7;
+    outline-offset: 2px;
+    text-decoration: none;
+}
+
 /*-----------------------
 ---- Header Styles ----
 -------------------------*/
@@ -481,17 +515,19 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 }
 
 .service-icon [class*=fa]{
-    -webkit-transform:scale(1);
-    transform:rotate(0);
-    -webkit-transition:all 0.3s ease-out;
-    transition:none;
+    -webkit-transform:scale(1) rotate(0deg);
+    transform:scale(1) rotate(0deg);
+    -webkit-transition:transform 0.25s ease-out;
+    transition:transform 0.25s ease-out;
 }
 
-.service-item:hover [class*=fa]{
-    -webkit-transform:scale(1.3);
-    transform:rotate(360deg);
-    -webkit-transition:all 0.5s ease-out;
-    transition:all 0.5s ease-out;
+.service-item:hover .service-icon [class*=fa],
+.service-item:focus-within .service-icon [class*=fa],
+.service-icon:hover [class*=fa],
+.service-icon:focus [class*=fa],
+.service-icon:active [class*=fa]{
+    -webkit-transform:scale(1.08);
+    transform:scale(1.08) rotate(10deg);
 }
 
 .service-item p{
@@ -1283,12 +1319,12 @@ div.fi_linkedin:hover, .social-links li.fi_linkedin a:hover{
 
 .scrollimation.scale-in{
 	opacity:0;
-	-webkit-transform: scale(0.5);
-	-moz-transform: scale(0.5);
-	-ms-transform: scale(0.5);
-	transform:scale(0.5);
-	-webkit-transition: -webkit-transform .6s cubic-bezier(.17,.89,.67,1.57), opacity .6s ease-out;
-	transition: transform .6s cubic-bezier(.17,.89,.67,1.57), opacity .6s ease-out;
+    -webkit-transform: scale(0.92);
+    -moz-transform: scale(0.92);
+    -ms-transform: scale(0.92);
+    transform:scale(0.92);
+    -webkit-transition: -webkit-transform .35s ease-out, opacity .35s ease-out;
+    transition: transform .35s ease-out, opacity .35s ease-out;
 }
 
 .scrollimation.scale-in.in{
@@ -1301,12 +1337,12 @@ div.fi_linkedin:hover, .social-links li.fi_linkedin a:hover{
 
 .scrollimation.fade-right{
 	opacity:0;
-	-webkit-transform: translateX(-100px);
-	-moz-transform: translateX(-100px);
-	-ms-transform: translateX(-100px);
-	transform:translateX(-100px);
-	-webkit-transition: -webkit-transform .6s ease-out,opacity .6s ease-out;
-	transition: transform .6s ease-out,opacity .6s ease-out;
+    -webkit-transform: translateX(-40px);
+    -moz-transform: translateX(-40px);
+    -ms-transform: translateX(-40px);
+    transform:translateX(-40px);
+    -webkit-transition: -webkit-transform .35s ease-out,opacity .35s ease-out;
+    transition: transform .35s ease-out,opacity .35s ease-out;
 }
 
 .scrollimation.fade-right.in{
@@ -1319,12 +1355,12 @@ div.fi_linkedin:hover, .social-links li.fi_linkedin a:hover{
 
 .scrollimation.fade-left{
 	opacity:0;
-	-webkit-transform: translateX(100px);
-	-moz-transform: translateX(100px);
-	-ms-transform: translateX(100px);
-	transform:translateX(100px);
-	-webkit-transition: -webkit-transform .6s ease-out,opacity .6s ease-out;
-	transition: transform .6s ease-out,opacity .6s ease-out;
+    -webkit-transform: translateX(40px);
+    -moz-transform: translateX(40px);
+    -ms-transform: translateX(40px);
+    transform:translateX(40px);
+    -webkit-transition: -webkit-transform .35s ease-out,opacity .35s ease-out;
+    transition: transform .35s ease-out,opacity .35s ease-out;
 }
 
 .scrollimation.fade-left.in{
@@ -1337,12 +1373,12 @@ div.fi_linkedin:hover, .social-links li.fi_linkedin a:hover{
 
 .scrollimation.fade-up{
 	opacity:0;
-	-webkit-transform: translateY(100px);
-	-moz-transform: translateY(100px);
-	-ms-transform: translateY(100px);
-	transform:translateY(100px);
-	-webkit-transition: -webkit-transform .6s ease-out,opacity .6s ease-in;
-	transition: transform .6s ease-out,opacity .6s ease-in-out;
+    -webkit-transform: translateY(40px);
+    -moz-transform: translateY(40px);
+    -ms-transform: translateY(40px);
+    transform:translateY(40px);
+    -webkit-transition: -webkit-transform .35s ease-out,opacity .35s ease-in;
+    transition: transform .35s ease-out,opacity .35s ease-in-out;
 }
 
 .scrollimation.fade-up.in{
@@ -1354,19 +1390,19 @@ div.fi_linkedin:hover, .social-links li.fi_linkedin a:hover{
 }
 
 .scrollimation.d1{
-	transition-delay:.3s;
+    transition-delay:.08s;
 }
 
 .scrollimation.d2{
-	transition-delay:.6s;
+    transition-delay:.16s;
 }
 
 .scrollimation.d3{
-	transition-delay:.9s;
+    transition-delay:.24s;
 }
 
 .scrollimation.d4{
-	transition-delay:1.2s;
+    transition-delay:.32s;
 }
 
 .touch .scrollimation.fade-in{
@@ -1511,7 +1547,7 @@ div.fi_linkedin:hover, .social-links li.fi_linkedin a:hover{
     }
     
     .big-text{
-        font-size:46px;
+        font-size:38px;
         line-height:50px;
     }
     

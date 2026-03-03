@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="nl">
 <head>
     <meta charset="utf-8">
@@ -40,8 +40,6 @@
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0" nonce="emHLF989">
 </script>
 		
-<!--=== PAGE PRELOADER ===-->
-<!--<div id="page-loader"><span class="page-loader-gif"></span></div>-->
 		
 	
 <!-- ==============================================
@@ -52,7 +50,7 @@ MAIN NAV
 			
 			<div class="navbar-header">
 				
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav" aria-controls="site-nav" aria-expanded="false" aria-label="Navigatie tonen of verbergen">
 					<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 				</button>
 					
@@ -96,11 +94,11 @@ MAIN NAV
 						<a href="./index.html#contact" class="scrollto">Contact</a>
 					</li>
 					<li>
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLanguages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="flag-icon flag-icon-fr">&nbsp;</span>&nbsp;Nederlands&nbsp;<span class="fa fa-chevron-down"></span></a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLanguages">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLanguages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="navbarDropdownMenuLanguages"><span class="flag-icon flag-icon-fr">&nbsp;</span>&nbsp;Nederlands&nbsp;<span class="fa fa-chevron-down"></span></a>
+						<div class="dropdown-menu" id="navbarDropdownMenuLanguages" aria-labelledby="navbarDropdownLanguages">
 							<a class="dropdown-item" href="../en/index.html"><span class="flag-icon flag-icon-us">&nbsp;</span><span class="lang-in-menu">Engels</span></a>
 							<br/>
-                        	<a class="dropdown-item" href="../fr/index.html"><span class="flag-icon flag-icon-fr">&nbsp;</span><span class="lang-in-menu">Français</span></a>
+                        	<a class="dropdown-item" href="../fr/index.html"><span class="flag-icon flag-icon-fr">&nbsp;</span><span class="lang-in-menu">FranÃ§ais</span></a>
 						</div>
 					</li>
                 </ul>
@@ -112,11 +110,11 @@ MAIN NAV
 	</div><!--End main-nav -->
     <div class="thank-you-container">
         <div class="thank-you-content">
-            <div class="thank-you-icon">✓</div>
+            <div class="thank-you-icon">âœ“</div>
 			<h1>Bedankt voor je bericht!</h1>
 			<p class="lead">Je bericht is succesvol verzonden. Ik neem zo snel mogelijk contact met je op.</p>
 			<p>Controleer je inbox voor een bevestiging.</p>
-			<a href="index.html" class="btn btn-color2" style="margin-top: 30px;">← Terug naar home</a>
+			<a href="index.html" class="btn btn-color2 thank-you-back-link">â† Terug naar home</a>
         </div>
     </div>
     <footer id="main-footer" class="add-padding bg-color3 border-top-color2">
@@ -155,7 +153,6 @@ MAIN NAV
 		<script src="../assets/js/jquery.backstretch.min.js"></script>
 		<script src="../assets/js/twitterFetcher_v10_min.js"></script>
 		<script src="https://maps.google.com/maps/api/js?sensor=true"></script>
-		<!--<script src="assets/js/contact.js"></script>-->
 		<script src="../assets/js/scripts.js"></script>
 </body>
 </html>

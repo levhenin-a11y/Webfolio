@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr-FR">
 <head>
     <meta charset="utf-8">
@@ -40,9 +40,6 @@
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v12.0" nonce="emHLF989">
 </script>
 		
-<!--=== PAGE PRELOADER ===-->
-<!--<div id="page-loader"><span class="page-loader-gif"></span></div>-->
-		
 	
 <!-- ==============================================
 MAIN NAV
@@ -52,7 +49,7 @@ MAIN NAV
 			
 			<div class="navbar-header">
 				
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav" aria-controls="site-nav" aria-expanded="false" aria-label="Afficher ou masquer la navigation">
 					<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 				</button>
 					
@@ -76,11 +73,11 @@ MAIN NAV
 					</li>
 					<li>
 						<!--rewards-->
-						<a href="./index.html#rewards" class="scrollto">Mes R&eacute;compenses</a>
+						<a href="./index.html#rewards" class="scrollto">Mes Récompenses</a>
 					</li>
 					<li>
 						<!--skills-->
-						<a href="./index.html#skills" class="scrollto">Mes Comp&eacute;tences</a>
+						<a href="./index.html#skills" class="scrollto">Mes Compétences</a>
 					</li>
 					<li>
 						<!--patrons-->
@@ -96,8 +93,8 @@ MAIN NAV
 						<a href="./index.html#contact" class="scrollto">Contact</a>
 					</li>
 					<li>
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLanguages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="flag-icon flag-icon-fr">&nbsp;</span>&nbsp;Fran&ccedil;ais&nbsp;<span class="fa fa-chevron-down"></span></a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLanguages">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLanguages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="navbarDropdownMenuLanguages"><span class="flag-icon flag-icon-fr">&nbsp;</span>&nbsp;Français&nbsp;<span class="fa fa-chevron-down"></span></a>
+						<div class="dropdown-menu" id="navbarDropdownMenuLanguages" aria-labelledby="navbarDropdownLanguages">
                         	<a class="dropdown-item" href="en/index.html"><span class="flag-icon flag-icon-us">&nbsp;</span><span class="lang-in-menu">English</span></a>
 							<br/>
                         	<a class="dropdown-item" href="nl/index.html"><span class="flag-icon flag-icon-nl">&nbsp;</span><span class="lang-in-menu">Nederlands</span></a>
@@ -112,11 +109,11 @@ MAIN NAV
 	</div><!--End main-nav -->
     <div class="thank-you-container">
         <div class="thank-you-content">
-            <div class="thank-you-icon">✓</div>
+            <div class="thank-you-icon">âœ“</div>
             <h1>Merci pour votre message!</h1>
-            <p class="lead">Votre message a été envoyé avec succès. Je vous répondrai dans les plus brefs délais.</p>
-            <p>Vérifiez votre boîte de réception pour une confirmation.</p>
-            <a href="index.html" class="btn btn-color2" style="margin-top: 30px;">← Retour à l'accueil</a>
+            <p class="lead">Votre message a Ã©tÃ© envoyÃ© avec succÃ¨s. Je vous rÃ©pondrai dans les plus brefs dÃ©lais.</p>
+            <p>VÃ©rifiez votre boÃ®te de rÃ©ception pour une confirmation.</p>
+			<a href="index.html" class="btn btn-color2 thank-you-back-link">â† Retour Ã  l'accueil</a>
         </div>
     </div>
     <footer id="main-footer" class="add-padding bg-color3 border-top-color2">
@@ -135,7 +132,7 @@ MAIN NAV
 				<p class="text-center">&copy; <script type="text/javascript">
 					var d=new Date();
 					document.write(d.getFullYear());
-					</script> - Tous droits r&eacute;serv&eacute;s&nbsp;&nbsp;//&nbsp;&nbsp;<a href="#">Vincent Henin - Vhenin</a></p>
+					</script> - Tous droits réservés&nbsp;&nbsp;//&nbsp;&nbsp;<a href="#">Vincent Henin - Vhenin</a></p>
 			
 			</div>
 			
@@ -155,7 +152,6 @@ MAIN NAV
 		<script src="assets/js/jquery.backstretch.min.js"></script>
 		<script src="assets/js/twitterFetcher_v10_min.js"></script>
 		<script src="https://maps.google.com/maps/api/js?sensor=true"></script>
-		<!--<script src="assets/js/contact.js"></script>-->
 		<script src="assets/js/scripts.js"></script>
 </body>
 </html>

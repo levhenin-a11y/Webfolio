@@ -275,6 +275,28 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     color: #F28C83;
 }
 
+#main-nav .nav a:focus,
+#main-nav .nav a:focus-visible,
+#main-nav .navbar-brand:focus,
+#main-nav .navbar-brand:focus-visible,
+#main-nav .navbar-toggle:focus,
+#main-nav .navbar-toggle:focus-visible,
+#main-nav .dropdown-item:focus,
+#main-nav .dropdown-item:focus-visible{
+    outline: 2px solid #F28C83;
+    outline-offset: 2px;
+    text-decoration: none;
+}
+
+#main-nav .dropdown-menu{
+    display: none;
+}
+
+#main-nav li.open > .dropdown-menu,
+#main-nav .dropdown-menu.show{
+    display: block;
+}
+
 /*-----------------------
 ---- Header Styles ----
 -------------------------*/

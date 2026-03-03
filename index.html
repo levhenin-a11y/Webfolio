@@ -1,6 +1,6 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr-FR" class="no-js">
-	<head profile="http://dublincore.org/documents/2008/08/04/dc-html/">
+	<head>
 		<meta charset="utf-8">
 
 		<!-- ==============================================
@@ -12,13 +12,13 @@
         <meta name="DC.Title" lang="fr" content="Portfolio en ligne de Vincent Henin - Vhenin" />
         <meta name="DC.Date.created" scheme="W3CDTF" content="2015-01-22" />
         <meta name="DC.Date.modified" scheme="W3CDTF" content="2023-05-20" />  
-        <meta name="DC.Subject" lang="fr" content="bande-dessin&eacute;e, bandes-dessin&eacute;es, vincent henin, vhenin, tarek, tartamudo, casterman, jacques martin, alix, voyages d'alix, illustration, graphic recording, visual, harvest, graphisme, logo, blateman, bobine" />
+        <meta name="DC.Subject" lang="fr" content="bande-dessinée, bandes-dessinées, vincent henin, vhenin, tarek, tartamudo, casterman, jacques martin, alix, voyages d'alix, illustration, graphic recording, visual, harvest, graphisme, logo, blateman, bobine" />
         <meta name="DC.Language" scheme="RFC3066" content="fr-FR" />
-        <meta name="DC.Description.abstract" lang="fr" content="Portfolio du dessinateur, illustrateur, graphiste, visual thinker Vincent Henin - Vhenin - Contact, Galeries, M&eacute;dias, Pr&eacute;sentation" />
+        <meta name="DC.Description.abstract" lang="fr" content="Portfolio du dessinateur, illustrateur, graphiste, visual thinker Vincent Henin - Vhenin - Contact, Galeries, Médias, Présentation" />
         <meta name="DC.Creator" lang="fr" content="Vincent Henin" />
 		
 		<title>Vhenin - Vincent Henin / Webfolio // Dessin, Illu et Graphisme</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 		<!-- ==============================================
@@ -36,7 +36,6 @@
 		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
 		<link rel="stylesheet" href="assets/css/flexslider.css">
 		<link rel="stylesheet" href="assets/css/styles-4.css">
-		<!--<link rel="stylesheet" href="assets/css/styles-4.min.css">-->
 		<link rel="stylesheet" href="assets/css/facebook_like_box.css">
         <link rel="stylesheet" href="assets/css/patrons.css">
 
@@ -44,10 +43,8 @@
 		<!-- ==============================================
 		Fonts
 		=============================================== -->
-		<!--<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,200,500,600,700' rel='stylesheet' type='text/css'>-->
 		<link href="https://fonts.googleapis.com/css?family=Lato:400,400italic,900" rel="stylesheet" type="text/css">
-		<!--<link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>-->
-        <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet" type="text/css">
 		<!-- ==============================================
 		JS
 		=============================================== -->
@@ -89,7 +86,7 @@
 			
 				<div class="navbar-header">
 				
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav" aria-controls="site-nav" aria-expanded="false" aria-label="Afficher ou masquer la navigation">
 						<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 					</button>
 					
@@ -113,11 +110,11 @@
 						</li>
 						<li>
 							<!--rewards-->
-							<a href="#rewards" class="scrollto">Mes R&eacute;compenses</a>
+							<a href="#rewards" class="scrollto">Mes Récompenses</a>
 						</li>
 						<li>
 							<!--skills-->
-							<a href="#skills" class="scrollto">Mes Comp&eacute;tences</a>
+							<a href="#skills" class="scrollto">Mes Compétences</a>
 						</li>
 						<li>
 							<!--patrons-->
@@ -133,8 +130,8 @@
 							<a href="#contact" class="scrollto">Contact</a>
 						</li>
 						<li>
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLanguages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="flag-icon flag-icon-fr">&nbsp;</span>&nbsp;Fran&ccedil;ais&nbsp;<span class="fa fa-chevron-down"></span></a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLanguages">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLanguages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="navbarDropdownMenuLanguages"><span class="flag-icon flag-icon-fr">&nbsp;</span>&nbsp;Français&nbsp;<span class="fa fa-chevron-down"></span></a>
+							<div class="dropdown-menu" id="navbarDropdownMenuLanguages" aria-labelledby="navbarDropdownLanguages">
                         		<a class="dropdown-item" href="en/index.html"><span class="flag-icon flag-icon-us">&nbsp;</span><span class="lang-in-menu">English</span></a>
 								<br/>
                         		<a class="dropdown-item" href="nl/index.html"><span class="flag-icon flag-icon-nl">&nbsp;</span><span class="lang-in-menu">Nederlands</span></a>
@@ -153,16 +150,6 @@
 		=============================================== -->
 		<header id="home">
 		
-			<!--<div class="container_park text-center">
-				<div style="width:50%; margin: 0 auto; margin-top: 1%;">media query for small devices for width and margin and externalize???-->
-					<!--<div class="fb-like" data-href="http://www.vhenin.be/" data-width="100%" data-show-faces="true" data-stream="true" data-header="true" data-share="true" data-layout="button_count"></div>
-				</div>
-				<div style="width:50%; margin: 0 auto; margin-top: 0.5%;">
-					Share: 	<a href="http://www.facebook.com/sharer/sharer.php?u=http://www.vhenin.be/" title="Share on Facebook" target="_blank" class="btn btn-facebook">
-								<i class="fa fa-facebook"></i> Facebook
-							</a>
-				</div>http://www.tumblr.com/share/link?url=[URL]&amp;name=[title]&amp;description=[content]
-			</div>-->
 			<div class="container_park text-center">
 				<span class="shares"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.vhenin.be%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore" title="Partagez VHENIN VINCENT HENIN Webfolio via Facebook" target="_blank"><i class="fa fa-facebook fa-fw"></i></a></span>
 				<span class="shares"><a href="http://www.tumblr.com/share/link?url=www.vhenin.be&amp;name=VHENIN VINCENT HENIN Webfolio]&amp;description=Vhenin's works: illustration, Comics, Webdesign and Webmastering, Graphical Layout, Storyboard, ..." title="Partagez VHENIN VINCENT HENIN Webfolio via Tumblr" target="_blank"><i class="fa fa-tumblr fa-fw"></i></a></span>
@@ -187,26 +174,6 @@
 		<!-- ==============================================
 		COPYRIGHT
 		=============================================== -->
-		<!--attendre r�ponse Qthemes support et garder en workaround-->
-		<!--
-		<section id="share" class="add-padding bg-color2">
-			<div class="container">
-				<h1 class="section-title big-text scrollimation fade-up">Like &amp; Share</h1>
-				<div class="row">
-					
-					<div style="width:50%; margin: 0 auto; margin-top: 1%;"><media query for small devices for width and margin and externalize???-->
-						<!--<div class="fb-like" data-href="http://www.vhenin.be/" data-width="100%" data-show-faces="true" data-stream="true" data-header="true" data-share="true" data-layout="button_count"></div>
-					</div>
-					<div class="scrollimation scale-in" style="width:50%; margin: 0 auto; margin-top: 1%; text-align: center;">
-						Share: 	<a href="http://www.facebook.com/sharer/sharer.php?u=http://www.vhenin.be/" title="Share on Facebook" target="_blank" class="btn btn-facebook">
-									<i class="fa fa-facebook"></i> Facebook
-								</a>
-					</div>
-					
-				</div>
-			</div>
-		</section>
-		-->
 		<section id="links" class="add-padding">
 		
 			<div class="container">
@@ -223,7 +190,7 @@
 						
 						<h3>Mon Blog</h3>
 						
-						<p>J'ai anim&eacute; un blog pendant des ann&eacute;es; le temps passant, je n'y suis plus tr&egrave;s actif mais <strong>il regorge toujours de p&eacute;pites</strong>. <a href="http://vhenin.canalblog.com/" target="_blank" title="Le blog de Vhenin">Allez-y faire un tour!</a></p>
+						<p>J'ai animé un blog pendant des années; le temps passant, je n'y suis plus très actif mais <strong>il regorge toujours de pépites</strong>. <a href="http://vhenin.canalblog.com/" target="_blank" title="Le blog de Vhenin">Allez-y faire un tour!</a></p>
 						
 					</div>
                     <div class="col-sm-4 service-item color1 scrollimation scale-in d2">
@@ -232,7 +199,7 @@
 						
 						<h3>VisualThinkers.eu</h3>
 						
-						<p>Je fais partie d'un <strong>collectif de Visual Thinkers</strong>. Qu'est-ce que c'est? <a href="https://visualthinkers.eu/" target="_blank" title="Le site VisualThinkers.eu">D&eacute;couvrez-le ici!</a></p>
+						<p>Je fais partie d'un <strong>collectif de Visual Thinkers</strong>. Qu'est-ce que c'est? <a href="https://visualthinkers.eu/" target="_blank" title="Le site VisualThinkers.eu">Découvrez-le ici!</a></p>
 						
 					</div>
 					<div class="col-sm-4 service-item color1 scrollimation scale-in d3">
@@ -241,20 +208,20 @@
 						
 						<h3>Linkedin</h3>
 						
-						<p>D&eacute;couvrez <strong>mes parcours professionnel et artistique</strong>. <a href="https://www.linkedin.com/in/vincent-henin-665326142/" target="_blank" title="Vincent HENIN sur Linkedin">Consultez mon profil Linkedin</a></p>
+						<p>Découvrez <strong>mes parcours professionnel et artistique</strong>. <a href="https://www.linkedin.com/in/vincent-henin-665326142/" target="_blank" title="Vincent HENIN sur Linkedin">Consultez mon profil Linkedin</a></p>
 						
 					</div>
 					
 					<!--clear both: to enable texts in p above to be bigger without exploding grid structure-->
-					<div style="clear: both;">&nbsp;<br/><br/></div>
+					<div class="clear-both-spacer">&nbsp;<br/><br/></div>
 					
-					<!--cr�er une page FB d�finitive, puis remplacer-->
+					<!--crï¿½er une page FB dï¿½finitive, puis remplacer-->
                     <div class="col-sm-4 service-item color1 scrollimation scale-in d4">
 						<div class="service-icon fi_facebook"><a href="https://www.facebook.com/vincenthenin.comixillustration" title="Vhenin sur Facebook" target="_blank"><i class="fa fa-facebook"></i></a></div>
 						
 						<h3>Vhenin Illustration Comix</h3>
 						
-						<p>Soyons <strong>amis sur Facebook</strong>! J'ai une page <strong>enti&egrave;rement d&eacute;di&eacute;e &agrave; mes travaux</strong>. <a href="" target="_blank" title="Vincent Henin - Vhenin Facebook page">Rejoins-y moi!</a></p>
+						<p>Soyons <strong>amis sur Facebook</strong>! J'ai une page <strong>entièrement dédiée à mes travaux</strong>. <a href="" target="_blank" title="Vincent Henin - Vhenin Facebook page">Rejoins-y moi!</a></p>
 						
 						
 					</div>
@@ -263,9 +230,9 @@
 
 							<div class="service-icon fi_youtube"><a href="#" title="Mes timelapses sur YouTube" target="_blank"><i class="fa fa-youtube"></i></a></div>
 
-							<h3>Vid&eacute;os</h3>
+							<h3>Vidéos</h3>
 
-						<p>J'ai mis quelques <strong>vid&eacute;os</strong> sur ma cha&icirc;ne <strong>YouTube</strong>. <a href="https://www.youtube.com/channel/UCFgRf_TU8ES5LJNMaKOr8Eg" target="_blank" title="D&eacute;couvrez mes Timelapses">D&eacute;couvrez mes Timelapses sur YouTube!</a></p>
+						<p>J'ai mis quelques <strong>vidéos</strong> sur ma chaîne <strong>YouTube</strong>. <a href="https://www.youtube.com/channel/UCFgRf_TU8ES5LJNMaKOr8Eg" target="_blank" title="Découvrez mes Timelapses">Découvrez mes Timelapses sur YouTube!</a></p>
 
 					</div>
 					
@@ -275,7 +242,7 @@
 
 							<h3>Blateman &amp; Bobine</h3>
 
-							<p>Les <strong>planches des Bandes-Dessin&eacute;es</strong> de <strong>Blateman &amp; Bobine</strong> sur mon blog. <a href="http://vhenin.canalblog.com/archives/blateman___bobine/index.html" title="Les planches de BD de Blateman et Bobine" target="_blank">D&eacute;couvrez-les sans plus attendre!</a></p>
+							<p>Les <strong>planches des Bandes-Dessinées</strong> de <strong>Blateman &amp; Bobine</strong> sur mon blog. <a href="http://vhenin.canalblog.com/archives/blateman___bobine/index.html" title="Les planches de BD de Blateman et Bobine" target="_blank">Découvrez-les sans plus attendre!</a></p>
 
 					</div>
 				</div>
@@ -302,12 +269,12 @@
 					
 						<h2 class="big-text">Je suis <br/>Vincent Henin... et Vhenin</h2>
 						
-						<p class="lead">Bonjour, je suis n&eacute; &agrave; Bruxelles en 1979.<br/>J'ai sign&eacute; <strong>4 bandes-dessin&eacute;es</strong> et collabor&eacute; &agrave; d'autres sous mon <em>vrai nom</em>, <strong>Vincent Henin</strong>, aux &eacute;ditions <strong>Casterman</strong>. Sous le pseudo <strong>Vhenin</strong>, j'ai cr&eacute;&eacute; 2 BD du duo '<strong>Blateman &amp; Bobine</strong>' avec le sc&eacute;nariste Tarek. Mais pas uniquement...
+						<p class="lead">Bonjour, je suis né à Bruxelles en 1979.<br/>J'ai signé <strong>4 bandes-dessinées</strong> et collaboré à d'autres sous mon <em>vrai nom</em>, <strong>Vincent Henin</strong>, aux éditions <strong>Casterman</strong>. Sous le pseudo <strong>Vhenin</strong>, j'ai créé 2 BD du duo '<strong>Blateman &amp; Bobine</strong>' avec le scénariste Tarek. Mais pas uniquement...
 						</p>
 					
-						<p>Je poursuis en parall&egrave;le une carri&egrave;re dans le <strong>(Motion) Graphisme</strong>, l'<strong>Illustration</strong>, le <strong>Webdesign</strong> et en tant qu'<strong>Interface Designer</strong>. Depuis peu, j'offre &eacute;galement des services comme <strong>Graphic Recorder</strong> et <strong>Visual Thinker</strong> pour des clients tels que la <strong>Commission Europ&eacute;enne</strong>, l'<strong>EU DataViz</strong>, Le <strong>Centre Europ&eacute;en de Convention (Luxembourg)</strong>, <strong>Trees &amp; People</strong> et tant d'autres.</p>
-						<p>C'est pour offrir ces services en toute ind&eacute;pendance que mon activit&eacute; <strong>freelance 'Vhenin'</strong> est n&eacute;e.<br/>D&eacute;couvrez les deux facettes sur ce site.</p>
-						<p>Vous voulez <u>tout</u> savoir de moi en d&eacute;tails?<br/>T&eacute;l&eacute;chargez ma bio:</p>
+						<p>Je poursuis en parallèle une carrière dans le <strong>(Motion) Graphisme</strong>, l'<strong>Illustration</strong>, le <strong>Webdesign</strong> et en tant qu'<strong>Interface Designer</strong>. Depuis peu, j'offre également des services comme <strong>Graphic Recorder</strong> et <strong>Visual Thinker</strong> pour des clients tels que la <strong>Commission Européenne</strong>, l'<strong>EU DataViz</strong>, Le <strong>Centre Européen de Convention (Luxembourg)</strong>, <strong>Trees &amp; People</strong> et tant d'autres.</p>
+						<p>C'est pour offrir ces services en toute indépendance que mon activité <strong>freelance 'Vhenin'</strong> est née.<br/>Découvrez les deux facettes sur ce site.</p>
+						<p>Vous voulez <u>tout</u> savoir de moi en détails?<br/>Téléchargez ma bio:</p>
 						<p class="text-center">
 							<br/>
 							<br/>
@@ -329,16 +296,16 @@
 		
 			<div class="container">
 				
-				<h2 class="section-title big-text scrollimation fade-up">Mes Comp&eacute;tences</h2>
+				<h2 class="section-title big-text scrollimation fade-up">Mes Compétences</h2>
 
-				<p class="text-center lead">En dehors de mes comp&eacute;tences de <em>dessin</em> et d'<em>illustration</em> classiques, voici les logiciels et frameworks qui me sont famili&eacute;s:</p>
+				<p class="text-center lead">En dehors de mes compétences de <em>dessin</em> et d'<em>illustration</em> classiques, voici les logiciels et frameworks qui me sont familiés:</p>
 				
 				<div class="row">
 				
 					<div class="col-lg-3 col-md-3 col-sm-6 mg-auto text-center thumbnail">
 						<h3>Adobe Photoshop</h3> 
 						<p>
-							<img src="assets/skills-logos/photoshop-114x114.png" class="img-fluid img-thumbnail" alt="Vincent Henin Vhenin - Comp&eacute;tence Adobe Photoshop Logo">
+							<img src="assets/skills-logos/photoshop-114x114.png" class="img-fluid img-thumbnail" alt="Vincent Henin Vhenin - Compétence Adobe Photoshop Logo">
 						</p>
 						<span class="fa fa-star fa-lg"></span>
 						<span class="fa fa-star fa-lg"></span>
@@ -349,7 +316,7 @@
                 	<div class="col-lg-3 col-md-3 col-sm-6 mg-auto text-center thumbnail">
 						<h3>Adobe Illustrator</h3> 
 						<p>
-							<img src="assets/skills-logos/illustrator-114x114.png" class="img-fluid img-thumbnail" alt="Vincent Henin Vhenin - Comp&eacute;tence Adobe Photpshop Illustrator">
+							<img src="assets/skills-logos/illustrator-114x114.png" class="img-fluid img-thumbnail" alt="Vincent Henin Vhenin - Compétence Adobe Photpshop Illustrator">
 						</p>
 						<span class="fa fa-star fa-lg"></span>
 						<span class="fa fa-star fa-lg"></span>
@@ -360,7 +327,7 @@
                 	<div class="col-lg-3 col-md-3 col-sm-6 mg-auto text-center thumbnail">
 						<h3>Adobe Premiere Pro</h3> 
 						<p>
-							<img src="assets/skills-logos/premiere-114x114.png" class="img-fluid img-thumbnail" alt="Vincent Henin Vhenin - Comp&eacute;tence Adobe Premiere Pro Logo">
+							<img src="assets/skills-logos/premiere-114x114.png" class="img-fluid img-thumbnail" alt="Vincent Henin Vhenin - Compétence Adobe Premiere Pro Logo">
 						</p>
 						<span class="fa fa-star fa-lg"></span>
 						<span class="fa fa-star fa-lg"></span>
@@ -371,7 +338,7 @@
 					<div class="col-lg-3 col-md-3 col-sm-6 mg-auto text-center thumbnail">
 						<h3>Adobe After Effects</h3> 
 						<p>
-							<img src="assets/skills-logos/ae-114x114.png" class="img-fluid img-thumbnail" alt="Vincent Henin Vhenin - Comp&eacute;tence Adobe After Effects Logo">
+							<img src="assets/skills-logos/ae-114x114.png" class="img-fluid img-thumbnail" alt="Vincent Henin Vhenin - Compétence Adobe After Effects Logo">
 						</p>
 						<span class="fa fa-star fa-lg"></span>
 						<span class="fa fa-star fa-lg"></span>
@@ -382,7 +349,7 @@
 					<div class="col-lg-3 col-md-3 col-sm-6 mg-auto text-center thumbnail">
 						<h3>Adobe XD</h3> 
 						<p>
-							<img src="assets/skills-logos/xd-114x114.png" class="img-fluid img-thumbnail" alt="Vincent Henin Vhenin - Comp&eacute;tence Adobe XD Logo">
+							<img src="assets/skills-logos/xd-114x114.png" class="img-fluid img-thumbnail" alt="Vincent Henin Vhenin - Compétence Adobe XD Logo">
 						</p>
 						<span class="fa fa-star fa-lg"></span>
 						<span class="fa fa-star fa-lg"></span>
@@ -393,7 +360,7 @@
 					<div class="col-lg-3 col-md-3 col-sm-6 mg-auto text-center thumbnail">
 						<h3>Adobe Dreamweaver</h3> 
 						<p>
-							<img src="assets/skills-logos/dreamweaver-114x114.png" class="img-fluid img-thumbnail" alt="Vincent Henin Vhenin - Comp&eacute;tence Adobe Dreamweaver Logo">
+							<img src="assets/skills-logos/dreamweaver-114x114.png" class="img-fluid img-thumbnail" alt="Vincent Henin Vhenin - Compétence Adobe Dreamweaver Logo">
 						</p>
 						<span class="fa fa-star fa-lg"></span>
 						<span class="fa fa-star fa-lg"></span>
@@ -404,7 +371,7 @@
 					<div class="col-lg-3 col-md-3 col-sm-6 mg-auto text-center thumbnail">
 						<h3>Adobe Indesign</h3> 
 						<p>
-							<img src="assets/skills-logos/indesign-114x114.png" class="img-fluid img-thumbnail" alt="Vincent Henin Vhenin - Comp&eacute;tence Adobe Indesign Logo">
+							<img src="assets/skills-logos/indesign-114x114.png" class="img-fluid img-thumbnail" alt="Vincent Henin Vhenin - Compétence Adobe Indesign Logo">
 						</p>
 						<span class="fa fa-star fa-lg"></span>
 						<span class="fa fa-star fa-lg"></span>
@@ -415,7 +382,7 @@
 					<div class="col-lg-3 col-md-3 col-sm-6 mg-auto text-center thumbnail">
 						<h3>Adobe Animate</h3> 
 						<p>
-							<img src="assets/skills-logos/animate-114x114.png" class="img-fluid img-thumbnail" alt="Vincent Henin Vhenin - Comp&eacute;tence Adobe Animate Logo">
+							<img src="assets/skills-logos/animate-114x114.png" class="img-fluid img-thumbnail" alt="Vincent Henin Vhenin - Compétence Adobe Animate Logo">
 						</p>
 						<span class="fa fa-star fa-lg"></span>
 						<span class="fa fa-star fa-lg"></span>
@@ -426,7 +393,7 @@
 					<div class="col-lg-3 col-md-3 col-sm-6 mg-auto text-center thumbnail">
 						<h3>Figma</h3> 
 						<p>
-							<img src="assets/skills-logos/figma-114x114.png" class="img-fluid img-thumbnail" alt="Vincent Henin Vhenin -Comp&eacute;tence Figma Logo">
+							<img src="assets/skills-logos/figma-114x114.png" class="img-fluid img-thumbnail" alt="Vincent Henin Vhenin -Compétence Figma Logo">
 						</p>
 						<span class="fa fa-star fa-lg"></span>
 						<span class="fa fa-star fa-lg"></span>
@@ -437,7 +404,7 @@
 					<div class="col-lg-3 col-md-3 col-sm-6 mg-auto text-center thumbnail">
 						<h3>Balsamiq Mockups</h3> 
 						<p>
-							<img src="assets/skills-logos/balsamiq-114x114.png" class="img-fluid img-thumbnail" alt="Vincent Henin Vhenin -Comp&eacute;tence Balsamiq Mockups Logo">
+							<img src="assets/skills-logos/balsamiq-114x114.png" class="img-fluid img-thumbnail" alt="Vincent Henin Vhenin -Compétence Balsamiq Mockups Logo">
 						</p>
 						<span class="fa fa-star fa-lg"></span>
 						<span class="fa fa-star fa-lg"></span>
@@ -448,7 +415,7 @@
 					<div class="col-lg-3 col-md-3 col-sm-6 mg-auto text-center thumbnail">
 						<h3>HTML5</h3> 
 						<p>
-							<img src="assets/skills-logos/html5-114x114.png" class="img-fluid img-thumbnail" alt="Vincent Henin Vhenin -Comp&eacute;tence HTML5 Logo">
+							<img src="assets/skills-logos/html5-114x114.png" class="img-fluid img-thumbnail" alt="Vincent Henin Vhenin -Compétence HTML5 Logo">
 						</p>
 						<span class="fa fa-star fa-lg"></span>
 						<span class="fa fa-star fa-lg"></span>
@@ -459,7 +426,7 @@
 					<div class="col-lg-3 col-md-3 col-sm-6 mg-auto text-center thumbnail">
 						<h3>SASS-SCSS</h3> 
 						<p>
-							<img src="assets/skills-logos/sassscss-114x114.png" class="img-fluid img-thumbnail" alt="Vincent Henin Vhenin -Comp&eacute;tence SASS-SCSS Logo">
+							<img src="assets/skills-logos/sassscss-114x114.png" class="img-fluid img-thumbnail" alt="Vincent Henin Vhenin -Compétence SASS-SCSS Logo">
 						</p>
 						<span class="fa fa-star fa-lg"></span>
 						<span class="fa fa-star fa-lg"></span>
@@ -470,7 +437,7 @@
 					<div class="col-lg-3 col-md-3 col-sm-6 mg-auto text-center thumbnail">
 						<h3>CSS 3</h3> 
 						<p>
-							<img src="assets/skills-logos/css3-114x114.png" class="img-fluid img-thumbnail" alt="Vincent Henin Vhenin -Comp&eacute;tence CSS 3 Logo">
+							<img src="assets/skills-logos/css3-114x114.png" class="img-fluid img-thumbnail" alt="Vincent Henin Vhenin -Compétence CSS 3 Logo">
 						</p>
 						<span class="fa fa-star fa-lg"></span>
 						<span class="fa fa-star fa-lg"></span>
@@ -481,7 +448,7 @@
 					<div class="col-lg-3 col-md-3 col-sm-6 mg-auto text-center thumbnail">
 						<h3>Flexbox</h3> 
 						<p>
-							<img src="assets/skills-logos/flexbox-114x114.png" class="img-fluid img-thumbnail" alt="Vincent Henin Vhenin -Comp&eacute;tence Flexbox Logo">
+							<img src="assets/skills-logos/flexbox-114x114.png" class="img-fluid img-thumbnail" alt="Vincent Henin Vhenin -Compétence Flexbox Logo">
 						</p>
 						<span class="fa fa-star fa-lg"></span>
 						<span class="fa fa-star fa-lg"></span>
@@ -492,7 +459,7 @@
 					<div class="col-lg-3 col-md-3 col-sm-6 mg-auto text-center thumbnail">
 						<h3>CSS Grid</h3> 
 						<p>
-							<img src="assets/skills-logos/cssgrid-114x114.png" class="img-fluid img-thumbnail" alt="Vincent Henin Vhenin -Comp&eacute;tence CSS Grid Logo">
+							<img src="assets/skills-logos/cssgrid-114x114.png" class="img-fluid img-thumbnail" alt="Vincent Henin Vhenin -Compétence CSS Grid Logo">
 						</p>
 						<span class="fa fa-star fa-lg"></span>
 						<span class="fa fa-star fa-lg"></span>
@@ -503,7 +470,7 @@
 					<div class="col-lg-3 col-md-3 col-sm-6 mg-auto text-center thumbnail">
 						<h3>Bootstrap</h3> 
 						<p>
-							<img src="assets/skills-logos/bootstrap-114x114.png" class="img-fluid img-thumbnail" alt="Vincent Henin Vhenin -Comp&eacute;tence Bootstrap Logo">
+							<img src="assets/skills-logos/bootstrap-114x114.png" class="img-fluid img-thumbnail" alt="Vincent Henin Vhenin -Compétence Bootstrap Logo">
 						</p>
 						<span class="fa fa-star fa-lg"></span>
 						<span class="fa fa-star fa-lg"></span>
@@ -514,7 +481,7 @@
 					<div class="col-lg-3 col-md-3 col-sm-6 mg-auto text-center thumbnail">
 						<h3>Atlassian Confluence</h3> 
 						<p>
-							<img src="assets/skills-logos/aconfluence-114x114.png" class="img-fluid img-thumbnail" alt="Vincent Henin Vhenin -Comp&eacute;tence Atlassian Confluence Logo">
+							<img src="assets/skills-logos/aconfluence-114x114.png" class="img-fluid img-thumbnail" alt="Vincent Henin Vhenin -Compétence Atlassian Confluence Logo">
 						</p>
 						<span class="fa fa-star fa-lg"></span>
 						<span class="fa fa-star fa-lg"></span>
@@ -525,7 +492,7 @@
 					<!--<div class="col-lg-3 col-md-3 col-sm-6 mg-auto text-center thumbnail">
 						<h3>Drupal</h3> 
 						<p>
-							<img src="assets/skills-logos/drupal-114x114.png" class="img-fluid img-thumbnail" alt="Vincent Henin Vhenin -Comp&eacute;tence Drupal Logo">
+							<img src="assets/skills-logos/drupal-114x114.png" class="img-fluid img-thumbnail" alt="Vincent Henin Vhenin -Compétence Drupal Logo">
 						</p>
 						<span class="fa fa-star fa-lg"></span>
 						<span class="fa fa-star fa-lg"></span>
@@ -536,7 +503,7 @@
 					<div class="col-lg-3 col-md-3 col-sm-6 mg-auto text-center thumbnail">
 						<h3>Blender</h3> 
 						<p>
-							<img src="assets/skills-logos/blender-114x114.png" class="img-fluid img-thumbnail" alt="Vincent Henin Vhenin -Comp&eacute;tence Blender Logo">
+							<img src="assets/skills-logos/blender-114x114.png" class="img-fluid img-thumbnail" alt="Vincent Henin Vhenin -Compétence Blender Logo">
 						</p>
 						<span class="fa fa-star fa-lg"></span>
 						<span class="fa fa-star fa-lg"></span>
@@ -547,7 +514,7 @@
 					<div class="col-lg-3 col-md-3 col-sm-6 mg-auto text-center thumbnail">
 						<h3>ServiceNow</h3> 
 						<p>
-							<img src="assets/skills-logos/servicenow-114x114.png" class="img-fluid img-thumbnail" alt="Vincent Henin Vhenin -Comp&eacute;tence ServiceNow">
+							<img src="assets/skills-logos/servicenow-114x114.png" class="img-fluid img-thumbnail" alt="Vincent Henin Vhenin -Compétence ServiceNow">
 						</p>
 						<span class="fa fa-star fa-lg"></span>
 						<span class="fa fa-star fa-lg"></span>
@@ -566,20 +533,20 @@
 				
 					<div class="col-sm-6 scrollimation fade-right d1">
 					
-						<img class="img-responsive polaroid" src="assets/images/cup.jpg" alt="Mes r&eacute;compenses - Vincent Henin - Vhenin" />
+						<img class="img-responsive polaroid" src="assets/images/cup.jpg" alt="Mes récompenses - Vincent Henin - Vhenin" />
 					
 					</div>
 					
 					<div class="col-sm-6 scrollimation fade-left d3">
 					
-						<h2 class="big-text">Mes R&eacute;compenses</h2>
+						<h2 class="big-text">Mes Récompenses</h2>
 						
-						<p class="lead">J'ai glan&eacute; quelques r&eacute;compenses... Pas de quoi en faire un fromage mais cela vaut la peine qu'on en parle un peu.
+						<p class="lead">J'ai glané quelques récompenses... Pas de quoi en faire un fromage mais cela vaut la peine qu'on en parle un peu.
 						</p>
 					
-						<p><span class="podium"></span>&nbsp;&nbsp;Le prix honorifique des <strong>5 meilleures ventes BD (calcul&eacute;es sur 3 mois)</strong> dans les FNAC francophones de Belgique - Avec l'album '<strong>Les Voyages d'Alix - Carthage</strong>'.</p>
-						<p><span class="trophee"></span>&nbsp;&nbsp;Le <strong>Prix de l'Avenir</strong> de la <strong>Chambre Belge des Experts en Bande-Dessin&eacute;e (CBEBD)</strong> pour l'album '<strong>Les Voyages d'Alix - J&eacute;rusalem</strong>'.</p>
-						<p><span class="medal"></span>&nbsp;&nbsp;Le <strong>Prix de 'Grand Contributor'</strong> de la <strong>Direction G&eacute;n&eacute;rale DIGIT de la Commission Europ&eacute;enne</strong> pour la plus grande contribution &agrave; la cr&eacute;ation d'articles <strong>dans la Newsroom de la Commission Europ&eacute;enne</strong>.</p>
+						<p><span class="podium"></span>&nbsp;&nbsp;Le prix honorifique des <strong>5 meilleures ventes BD (calculées sur 3 mois)</strong> dans les FNAC francophones de Belgique - Avec l'album '<strong>Les Voyages d'Alix - Carthage</strong>'.</p>
+						<p><span class="trophee"></span>&nbsp;&nbsp;Le <strong>Prix de l'Avenir</strong> de la <strong>Chambre Belge des Experts en Bande-Dessinée (CBEBD)</strong> pour l'album '<strong>Les Voyages d'Alix - Jérusalem</strong>'.</p>
+						<p><span class="medal"></span>&nbsp;&nbsp;Le <strong>Prix de 'Grand Contributor'</strong> de la <strong>Direction Générale DIGIT de la Commission Européenne</strong> pour la plus grande contribution à la création d'articles <strong>dans la Newsroom de la Commission Européenne</strong>.</p>
 					</div>
 				
 				</div>
@@ -622,7 +589,7 @@
 							<a href="#" data-filter=".GF">Facilitation Graphique</a>
 						</li>
 						<li class="scrollimation fade-left d1">
-							<a href="#" data-filter=".BD">Bande-Dessin&eacute;e</a>
+							<a href="#" data-filter=".BD">Bande-Dessinée</a>
 						</li>
 						<li class="scrollimation fade-left d1">
 							<a href="#" data-filter=".mockup">Mockup</a>
@@ -674,11 +641,11 @@
 						
 						<div class="sr-only project-description" data-images="pix/CAR/cart_00.jpg,pix/CAR/cart_01.jpg,pix/CAR/cart_03.jpg,pix/CAR/cart_04.jpg,pix/CAR/cart_05.jpg,pix/CAR/cart_06.jpg,pix/CAR/cart_07.jpg,pix/CAR/cart_08.jpg,pix/CAR/cart_09.jpg,pix/CAR/TRCARTH22_copy.jpg,pix/CAR/TRCARTH22b_copy.jpg,pix/CAR/TRCARTH24_copy.jpg,pix/CAR/TRCARTH30_copy.jpg,pix/CAR/TRCARTH28_copy.jpg,pix/CAR/TRCARTH35_copy.jpg,pix/CAR/TRCARTH36_copy.jpg,pix/CAR/TRCARTH40_copy.jpg" >
 						
-							<p>Directeur de s&eacute;rie: Jacques Martin / Cat&eacute;gorie: BD historique et didactique / 56 pages / Casterman &eacute;ditions</p>
+							<p>Directeur de série: Jacques Martin / Catégorie: BD historique et didactique / 56 pages / Casterman éditions</p>
 							<p>Textes-Dessins-Couleurs: Vincent Henin</p>
 							
-							<p>Si Carthage a &eacute;t&eacute; d&eacute;truite par les Romains &agrave; la fin des guerres puniques, pour &ecirc;tre reconstruite plus tard en colonie romaine, elle est en tous cas
-							enti&egrave;rement reconstitu&eacute;e dans son architecture et histoire tout au long de ce livre. Laissez Alix vous guider...
+							<p>Si Carthage a été détruite par les Romains à la fin des guerres puniques, pour être reconstruite plus tard en colonie romaine, elle est en tous cas
+							entièrement reconstituée dans son architecture et histoire tout au long de ce livre. Laissez Alix vous guider...
 							</p>
 							<p>&nbsp;</p>
 							<!--<p class="text-center"><a class="btn btn-color1" href="#external-link"><i class="fa fa-arrow-right"></i>Visit Website</a></p>-->
@@ -688,21 +655,21 @@
 
 					<article class="project-item BD valix">
 						
-						<img class="img-responsive project-image" src="assets/images/thumb_jerusalem.png"  alt="Voyages d'Alix - J�rusalem"><!--Project thumb -->
+						<img class="img-responsive project-image" src="assets/images/thumb_jerusalem.png"  alt="Voyages d'Alix - Jï¿½rusalem"><!--Project thumb -->
 						
 						<div class="hover-mask">
-							<h2 class="project-title">Voyages d'Alix - J&eacute;rusalem</h2><!--Project Title -->
+							<h2 class="project-title">Voyages d'Alix - Jérusalem</h2><!--Project Title -->
 							<p>BD / Voyages d'Alix</p><!--Project Subtitle -->
 						</div>
 						
 						<!--==== Project Preview HTML ====-->
 						
 						<div class="sr-only project-description" data-images="pix/JER/jerusalem_couleurs_00.jpg,pix/JER/jerusalem_couleurs_01.jpg,pix/JER/jerusalem_couleurs_02.jpg,pix/JER/jerusalem_couleurs_03.jpg,pix/JER/jerusalem_couleurs_04.jpg,pix/JER/jerusalem_couleurs_05.jpg,pix/JER/jerusalem_couleurs_06.jpg,pix/JER/jerusalem_couleurs_07.jpg,pix/JER/jerusalem_couleurs_08.jpg,pix/JER/jerusalem_couleurs_09.jpg,pix/JER/jerusalem_couleurs_10.jpg,pix/JER/jerusalem_couleurs_11.jpg,pix/JER/jerusalem_couleurs_12.jpg,pix/JER/jerusalem_couleurs_13.jpg,pix/JER/jerusalem_couleurs_14.jpg,pix/JER/jerusalem_couleurs_15.jpg" >
-						<p>Directeur de s&eacute;rie: Jacques Martin / Cat&eacute;gorie: BD historique et didactique / 56 pages / Casterman &eacute;ditions</p>
+						<p>Directeur de série: Jacques Martin / Catégorie: BD historique et didactique / 56 pages / Casterman éditions</p>
 						<p>Textes-Dessins-Couleurs: Vincent Henin</p>
 							
-							<p>La ville de la paix, toujours vibrante et actuelle, se d&eacute;voile au long du p&eacute;riple d'Alix et Enak. De sa fondation directement li&eacute;e au peuple juif
-							jusqu'&agrave; son annexion &agrave; l'Empire Romain. D&eacute;couvrez son Histoire, son architecture et ses grands rois... En fin d'ouvrage, les sites importants &agrave; visiter si vous vous rendez en Isra&euml;l.
+							<p>La ville de la paix, toujours vibrante et actuelle, se dévoile au long du périple d'Alix et Enak. De sa fondation directement liée au peuple juif
+							jusqu'à son annexion à l'Empire Romain. Découvrez son Histoire, son architecture et ses grands rois... En fin d'ouvrage, les sites importants à visiter si vous vous rendez en Israël.
 							</p>
 							<p>&nbsp;</p>
 							<!--<p class="text-center"><a class="btn btn-color1" href="#external-link"><i class="fa fa-arrow-right"></i>Visit Website</a></p>-->
@@ -712,10 +679,10 @@
 
 					<article class="project-item BD valix">
 						
-						<img class="img-responsive project-image" src="assets/images/thumb_petra.png"  alt="Voyages d'Alix - P&eacute;tra"><!--Project thumb -->
+						<img class="img-responsive project-image" src="assets/images/thumb_petra.png"  alt="Voyages d'Alix - Pétra"><!--Project thumb -->
 						
 						<div class="hover-mask">
-							<h2 class="project-title">Voyages d'Alix - P&eacute;tra</h2><!--Project Title -->
+							<h2 class="project-title">Voyages d'Alix - Pétra</h2><!--Project Title -->
 							<p>BD / Voyages d'Alix</p><!--Project Subtitle -->
 						</div>
 						
@@ -723,11 +690,11 @@
 						
 						<div class="sr-only project-description" data-images="pix/PET/petra_couleur_00.jpg,pix/PET/petra_couleur_01.jpg,pix/PET/petra_couleur_02.jpg,pix/PET/petra_couleur_03.jpg,pix/PET/petra_couleur_04.jpg,pix/PET/petra_couleur_05.jpg,pix/PET/petra_couleur_06.jpg,pix/PET/petra_couleur_07.jpg,pix/PET/petra_couleur_08.jpg,pix/PET/petra_couleur_09.jpg,pix/PET/petra_couleur_10.jpg,pix/PET/petra_couleur_11.jpg,pix/PET/petra_couleur_12.jpg,pix/PET/petra_couleur_13.jpg,pix/PET/petra_couleur_14.jpg,pix/PET/petra_couleur_15.jpg,pix/PET/petra_couleur_16.jpg,pix/PET/petra_couleur_17.jpg,pix/PET/petra_couleur_18.jpg" >
 						
-							<p>Directeur de s&eacute;rie: Jacques Martin / Cat&eacute;gorie: BD historique et didactique / 56 pages / Casterman &eacute;ditions</p>
+							<p>Directeur de série: Jacques Martin / Catégorie: BD historique et didactique / 56 pages / Casterman éditions</p>
 							<p>Textes-Dessins-Couleurs: Vincent Henin</p>
 							
-							<p>P&eacute;tra, la ville taill&eacute;e &agrave; m&ecirc;me la pierre, n'aura plus de secrets pour vous. D&eacute;couvrez avec Alix, la ville fond&eacute;e par les Nabat&eacute;ens, v&eacute;ritables g&eacute;nies de l'architecture et du commerce.
-							En plus, profitez du suppl&eacute;ment sur Palmyre et Baalbek.
+							<p>Pétra, la ville taillée à même la pierre, n'aura plus de secrets pour vous. Découvrez avec Alix, la ville fondée par les Nabatéens, véritables génies de l'architecture et du commerce.
+							En plus, profitez du supplément sur Palmyre et Baalbek.
 							</p>
 							<p>&nbsp;</p>
 							<!--<p class="text-center"><a class="btn btn-color1" href="#external-link"><i class="fa fa-arrow-right"></i>Visit Website</a></p>-->
@@ -738,10 +705,10 @@
 
 					<article class="project-item BD valix">
 						
-						<img class="img-responsive project-image" src="assets/images/thumb_lutece.png"  alt="Voyages d'Alix - Lut&egrave;ce"><!--Project thumb -->
+						<img class="img-responsive project-image" src="assets/images/thumb_lutece.png"  alt="Voyages d'Alix - Lutèce"><!--Project thumb -->
 						
 						<div class="hover-mask">
-							<h2 class="project-title">Voyages d'Alix - Lut&egrave;ce</h2><!--Project Title -->
+							<h2 class="project-title">Voyages d'Alix - Lutèce</h2><!--Project Title -->
 							<p>BD / Voyages d'Alix</p><!--Project Subtitle -->
 						</div>
 						
@@ -749,11 +716,11 @@
 						
 						<div class="sr-only project-description" data-images="pix/LUT/lut00.jpg,pix/LUT/lut01.jpg,pix/LUT/lut02.jpg,pix/LUT/lut03.jpg,pix/LUT/lut04.jpg,pix/LUT/lut05.jpg,pix/LUT/lut06.jpg,pix/LUT/lut07.jpg,pix/LUT/lut08.jpg,pix/LUT/lut09.jpg,pix/LUT/lut10.jpg,pix/LUT/lut11.jpg,pix/LUT/lut12.jpg,pix/LUT/lut13.jpg" >
 						
-							<p>Directeur de s&eacute;rie: Jacques Martin / Cat&eacute;gorie: BD historique et didactique / 56 pages / Casterman &eacute;ditions</p>
+							<p>Directeur de série: Jacques Martin / Catégorie: BD historique et didactique / 56 pages / Casterman éditions</p>
 							<p>Textes-Dessins: Vincent Henin / Couleurs: Vincenzo d'Aprile</p>
 							
-							<p>D&eacute;couvrez Paris &agrave; l'&eacute;poque gauloise et gallo-romaine avec Alix et Enak. Voyez Lut&egrave;ce, ville lumi&egrave;re de l'Antiquit&eacute;, comme vous ne l'avez jamais vue!
-							En prime, adresses utiles et compl&eacute;ment de visite &agrave; la fin de la BD.
+							<p>Découvrez Paris à l'époque gauloise et gallo-romaine avec Alix et Enak. Voyez Lutèce, ville lumière de l'Antiquité, comme vous ne l'avez jamais vue!
+							En prime, adresses utiles et complément de visite à la fin de la BD.
 							</p>
 							<p>&nbsp;</p>
 							<!--<p class="text-center"><a class="btn btn-color1" href="#external-link"><i class="fa fa-arrow-right"></i>Visit Website</a></p>-->
@@ -774,11 +741,11 @@
 						
 						<div class="sr-only project-description" data-images="pix/BB/BB_00.jpg,pix/BB/page-garde_web.jpg,pix/BB/BB_13.jpg,pix/BB/BB_15.jpg,pix/BB/BB_16.jpg,pix/BB/BB_17.jpg,pix/BB/BB_19.jpg,pix/BB/BB_20.jpg,pix/BB/BB_24.jpg,pix/BB/BB_25.jpg,pix/BB/BB_26.jpg,pix/BB/BB_28.jpg,pix/BB/BB_32.jpg,pix/BB/BB_33.jpg,pix/BB/BB_34.jpg,pix/BB/BB_38.jpg,pix/BB/BB_41.jpg,pix/BB/BB_44.jpg" >
 						
-							<p>Sc&eacute;nario: Tarek / Cat&eacute;gorie: BD Jeunesse / 46 pages</p>
+							<p>Scénario: Tarek / Catégorie: BD Jeunesse / 46 pages</p>
 							<p>Dessins-Couleurs: Vhenin (Vincent Henin)</p>
 					
-							<p>Blateman est &agrave; l'aventure ce que Batman est &agrave; la chauve-souris... Euh, comprenez ce que vous y comprenez... Il est muscl&eacute;, sympa mais tellement maladroit.
-							Heureusement que Bobine, son assistant est l&agrave; pour l'emp&ecirc;cher de devenir un super-z&eacute;ro &agrave; la place d'un super-h&eacute;ros!</p>
+							<p>Blateman est à l'aventure ce que Batman est à la chauve-souris... Euh, comprenez ce que vous y comprenez... Il est musclé, sympa mais tellement maladroit.
+							Heureusement que Bobine, son assistant est là pour l'empêcher de devenir un super-zéro à la place d'un super-héros!</p>
 							<p>&nbsp;</p>
 							<!--<p class="text-right"><a class="btn btn-color1" href="#external-link"><i class="fa fa-dribbble"></i>View on Dribbble</a></p>-->
 						</div>
@@ -798,11 +765,11 @@
 						
 						<div class="sr-only project-description" data-images="pix/BB2/BB2_01.jpg,pix/BB2/BB2_03.jpg,pix/BB2/BB2_04.jpg,pix/BB2/BB2_06.jpg,pix/BB2/BB2_07.jpg,pix/BB2/BB2_12.jpg,pix/BB2/BB2_14.jpg,pix/BB2/BB2_18.jpg,pix/BB2/BB2_21.jpg,pix/BB2/BB2_22.jpg,pix/BB2/BB2_29.jpg,pix/BB2/BB2_31.jpg,pix/BB2/BB2_35.jpg,pix/BB2/BB2_37.jpg,pix/BB2/BB2_41-01.jpg,pix/BB2/BB2_41-02.jpg,pix/BB2/BB2_43.jpg" >
 						
-							<p>Sc&eacute;nario: Tarek / Cat&eacute;gorie: BD Jeunesse / 46 pages</p>
+							<p>Scénario: Tarek / Catégorie: BD Jeunesse / 46 pages</p>
 							<p>Dessins-Couleurs: Vhenin (Vincent Henin)</p>
 					
-							<p>Blateman est &agrave; l'aventure ce que Batman est &agrave; la chauve-souris... Euh, comprenez ce que vous y comprenez... Il est muscl&eacute;, sympa mais tellement maladroit.
-							Heureusement que Bobine, son assistant est l&agrave; pour l'emp&ecirc;cher de devenir un super-z&eacute;ro &agrave; la place d'un super-h&eacute;ros!</p>
+							<p>Blateman est à l'aventure ce que Batman est à la chauve-souris... Euh, comprenez ce que vous y comprenez... Il est musclé, sympa mais tellement maladroit.
+							Heureusement que Bobine, son assistant est là pour l'empêcher de devenir un super-zéro à la place d'un super-héros!</p>
 							<p>&nbsp;</p>
 							<!--<p class="text-right"><a class="btn btn-color1" href="#external-link"><i class="fa fa-dribbble"></i>View on Dribbble</a></p>-->
 						</div>
@@ -823,7 +790,7 @@
 						
 							<p>Illustration d'une nouvelle de Milena Albu - ouvrage pour la jeunesse</p>
 					
-							<p>Pr&eacute;sentation des personnages, illustrations intra-textes et &eacute;l&eacute;ments d&eacute;coratifs pour s&eacute;paration des chapitres ou sous-chapitres</p>
+							<p>Présentation des personnages, illustrations intra-textes et éléments décoratifs pour séparation des chapitres ou sous-chapitres</p>
 							<p>&nbsp;</p>
 							<!--<p class="text-right"><a class="btn btn-color1" href="#external-link"><i class="fa fa-dribbble"></i>View on Dribbble</a></p>-->
 						</div>
@@ -835,7 +802,7 @@
 						<img class="img-responsive project-image" src="assets/images/thumb_PPG.png"  alt="">
 						
 						<div class="hover-mask">
-							<h2 class="project-title">La Gen&egrave;se de L'Histoire</h2>
+							<h2 class="project-title">La Genèse de L'Histoire</h2>
 							<p>Storyboard / Illustration</p>
 						</div>
 						
@@ -845,7 +812,7 @@
 						
 							<p>Adaptation d'une nouvelle de Dino Buzatti "Il bambino" dans "Le K".</p>
 							
-							<p>Avez-d&eacute;j&agrave; imagine Hitler petit enfant jouant dans un parc?
+							<p>Avez-déjà imagine Hitler petit enfant jouant dans un parc?
 							</p>
 							<p>&nbsp;</p>
 							<!--<p class="text-center"><a class="btn btn-color1" href="#external-link"><i class="fa fa-arrow-right"></i>Visit Website</a></p>-->
@@ -868,7 +835,7 @@
 						
 							<p>Adaptation de la chanson de Serge Gainsbourg en video clip.</p>
 							
-							<p>Les deux amants terribles et &eacute;ternels sur une chanson de Gainsbourg... Un classique!
+							<p>Les deux amants terribles et éternels sur une chanson de Gainsbourg... Un classique!
 							</p>
 							<p>&nbsp;</p>
 							<!--<p class="text-center"><a class="btn btn-color1" href="#external-link"><i class="fa fa-arrow-right"></i>Visit Website</a></p>-->
@@ -880,7 +847,7 @@
 						<img class="img-responsive project-image" src="assets/images/thumb_detectives.png"  alt="">
 						
 						<div class="hover-mask">
-							<h2 class="project-title">La fin des trois d&eacute;tectives</h2>
+							<h2 class="project-title">La fin des trois détectives</h2>
 							<p>Storyboard / Illustration</p>
 						</div>
 						
@@ -888,9 +855,9 @@
 						
 						<div class="sr-only project-description" data-images="pix/detectives/1.gif,pix/detectives/2.gif,pix/detectives/3.gif,pix/detectives/4.gif,pix/detectives/5.gif,pix/detectives/6.gif,pix/detectives/7.gif,pix/detectives/8.gif,pix/detectives/9.gif,pix/detectives/10.gif,pix/detectives/11.gif,pix/detectives/12.gif,pix/detectives/13.gif,pix/detectives/14.gif,pix/detectives/15-new.gif,pix/detectives/16.gif,pix/detectives/17.gif,pix/detectives/18.gif,pix/detectives/20.gif,pix/detectives/21.gif,pix/detectives/22-new.gif,pix/detectives/23.gif,pix/detectives/25.gif,pix/detectives/26-new.gif,pix/detectives/27.gif,pix/detectives/28.gif,pix/detectives/29.gif,pix/detectives/30.gif,pix/detectives/31.gif,pix/detectives/32.gif,pix/detectives/34-new.gif,pix/detectives/35.gif,pix/detectives/37.gif,pix/detectives/38.gif" >
 						
-							<p>Sherlock Holmes et Watson, Maigret, Hercule Poirot myst&eacute;rieusement r&eacute;unis dans un compartiment de train...</p>
+							<p>Sherlock Holmes et Watson, Maigret, Hercule Poirot mystérieusement réunis dans un compartiment de train...</p>
 							
-							<p>Qui est derri&egrave;re tout &ccedil;a?..
+							<p>Qui est derrière tout ça?..
 							</p>
 							<p>&nbsp;</p>
 							<!--<p class="text-center"><a class="btn btn-color1" href="#external-link"><i class="fa fa-arrow-right"></i>Visit Website</a></p>-->
@@ -902,7 +869,7 @@
 						<img class="img-responsive project-image" src="assets/images/thumb_BAD.png"  alt="">
 											
 						<div class="hover-mask">
-							<h2 class="project-title">Bo&icirc;te &agrave; Dessins (divers)</h2>
+							<h2 class="project-title">Boîte à Dessins (divers)</h2>
 							<p>Illustration</p>
 						</div>
 											
@@ -910,7 +877,7 @@
 											
 						<div class="sr-only project-description" data-images="pix/BAD/BAD-01.jpg,pix/BAD/BAD-02.jpg,pix/BAD/BAD-03.jpg,pix/BAD/BAD-04.jpg,pix/BAD/BAD-05.jpg,pix/BAD/BAD-06.jpg,pix/ILL_BM/ILL_BM-05.jpg,pix/ILL_BM/ILL_BM-06.jpg,pix/BAD/BAD-07.jpg,pix/BAD/BAD-08.jpg,pix/BAD/BAD-09.jpg,pix/BAD/BAD-10.jpg,pix/BAD/BAD-13.jpg,pix/BAD/BAD-14.jpg,pix/BAD/BAD-15.jpg,pix/BAD/BAD-16.jpg,pix/BAD/BAD-17.jpg,pix/BAD/BAD-18.jpg,pix/BAD/BAD-21.jpg,pix/BAD/ILL_AP-18.jpg,pix/BAD/ILL_AP-19.jpg,pix/BAD/ILL_AP-17.jpg,pix/BAD/ILL_AP-20.jpg,pix/BAD/BAD-20.jpg,pix/BAD/BAD-19.jpg " >
 											
-							<p>Croquis, &eacute;tudes et dessins oubli&eacute;s... mais pas pour tout le monde. Un peu de tout, en fait. Une belle d&eacute;monstration de mes diff&eacute;rentes facettes d'illustrateur/dessinateur.
+							<p>Croquis, études et dessins oubliés... mais pas pour tout le monde. Un peu de tout, en fait. Une belle démonstration de mes différentes facettes d'illustrateur/dessinateur.
 							</p>			
 							<p>Illustrations de nouvelle, pour livres, croquis.
 							</p>
@@ -932,9 +899,9 @@
 						
 						<div class="sr-only project-description" data-images="pix/GRA/fiche_logos_visual_ID_01.jpg,pix/GRA/fiche_logos_visual_ID_02.jpg,pix/GRA/GRA-01.jpg,pix/GRA/GRA-bis-01.jpg,pix/GRA/GRA-bis-02.jpg,pix/GRA/GRA-16.jpg,pix/GRA/GRA-17.jpg,pix/GRA/GRA-bis-03.jpg,pix/GRA/GRA-09.jpg,pix/GRA/GRA-10.jpg,pix/GRA/GRA-11.jpg,pix/GRA/GRA-12.jpg,pix/GRA/GRA-bis-04.jpg,pix/GRA/GRA-bis-05.jpg,pix/GRA/GRA-bis-06.jpg,pix/GRA/GRA-bis-07.jpg" >
 						
-							<p>Partenaires: Commission Europ&eacute;enne, Apis Consulting, Une Zine &agrave; R&ecirc;ves, Une Chaise sur le toit, Miss V. Hats, Champagne Tissier et Fils, Conseil de la Jeunesse de la Communaut&eacute; Fran&ccedil;aise de Belgique, Cara et associ&eacute;s, MushRoom Retrogaming, Pianofabriek ...</p>
+							<p>Partenaires: Commission Européenne, Apis Consulting, Une Zine à Rêves, Une Chaise sur le toit, Miss V. Hats, Champagne Tissier et Fils, Conseil de la Jeunesse de la Communauté Française de Belgique, Cara et associés, MushRoom Retrogaming, Pianofabriek ...</p>
 							
-							<p>Contactez-moi si vous avez une id&eacute;e &agrave; d&eacute;velopper. Je suis toujours partant!
+							<p>Contactez-moi si vous avez une idée à développer. Je suis toujours partant!
 							</p>
 							<p>&nbsp;</p>
 							<!--<p class="text-center"><a class="btn btn-color1" href="#external-link"><i class="fa fa-arrow-right"></i>Visit Website</a></p>-->
@@ -954,10 +921,10 @@
 						
 						<div class="sr-only project-description" data-images="pix/GF/GF-01.jpg,pix/GF/GF-02.jpg,pix/GF/GF-03.jpg,pix/GF/GF-04.jpg,pix/GF/GF-05.jpg,pix/GF/GF-06.jpg,pix/GF/GF-07.jpg,pix/GF/GF-08.jpg,pix/GF/GF-09.jpg,pix/GF/GF-10.jpg,pix/GF/GF-11.jpg,pix/GF/GF-12.jpg,pix/GF/GF-13.jpg,pix/GF/GF-14.jpg,pix/GF/GF-15.jpg,pix/GF/GF-16.jpg,pix/GF/GF-17.jpg,pix/GF/GF-18.jpg,pix/GF/GF-19.jpg,pix/GF/GF-20.jpg,pix/GF/GF-21.jpg,pix/GF/GF-22.jpg" >
 						
-							<p>Un accompagnment graphique et visuel comme aide &agrave; la discussion, debriefing et la construction mental et technique d'un projet en &eacute;quipe.<br/>
-							Il peut s'agir aussi des minutes d'une r&eacute;union ou d'un rapport... dessin&eacute; ou repr&eacute;sent&eacute; graphiquement pour une meilleure compr&eacute;hension et m&eacute;morisation.</p>
+							<p>Un accompagnment graphique et visuel comme aide à la discussion, debriefing et la construction mental et technique d'un projet en équipe.<br/>
+							Il peut s'agir aussi des minutes d'une réunion ou d'un rapport... dessiné ou représenté graphiquement pour une meilleure compréhension et mémorisation.</p>
 							
-							<p>Contacte-moi si tu as un &eacute;v&egrave;nement &agrave; couvrir. Je suis toujours partant!
+							<p>Contacte-moi si tu as un évènement à couvrir. Je suis toujours partant!
 							</p>
 							<p>&nbsp;</p>
 							<!--<p class="text-center"><a class="btn btn-color1" href="#external-link"><i class="fa fa-arrow-right"></i>Visit Website</a></p>-->
@@ -977,9 +944,9 @@
 						
 						<div class="sr-only project-description" data-images="pix/ILL_AP/ILL_AP-01.jpg,pix/ILL_AP/ILL_AP-02.jpg,pix/ILL_AP/ILL_AP-03.jpg,pix/ILL_AP/ILL_AP-04.jpg,pix/ILL_AP/ILL_AP-05.jpg,pix/ILL_AP/ILL_AP-06.jpg,pix/ILL_AP/ILL_AP-07.jpg,pix/ILL_AP/ILL_AP-08.jpg,pix/ILL_AP/ILL_AP-09.jpg,pix/ILL_AP/ILL_AP-10.jpg,pix/ILL_AP/ILL_AP-11.jpg,pix/ILL_AP/ILL_AP-12.jpg,pix/ILL_AP/ILL_AP-13.jpg,pix/ILL_AP/ILL_AP-15.jpg, pix/ILL_AP/ILL_AP-16.jpg" >
 						
-							<p>Souvent issues du bouche-&agrave;-oreille, ces illustrations sont souvent de belles rencontres. La demande inhabituelle a un charme particulier.</p>
+							<p>Souvent issues du bouche-à-oreille, ces illustrations sont souvent de belles rencontres. La demande inhabituelle a un charme particulier.</p>
 							
-							<p>Dessins pour Manuels d'Utilisation, portraits caricatur&eacute;s d'une &eacute;quipe ou de particuliers, recherches pour une mascotte...</p>
+							<p>Dessins pour Manuels d'Utilisation, portraits caricaturés d'une équipe ou de particuliers, recherches pour une mascotte...</p>
 							<p>&nbsp;</p>
 							<!--<p class="text-center"><a class="btn btn-color1" href="#external-link"><i class="fa fa-arrow-right"></i>Visit Website</a></p>-->
 						</div>
@@ -999,7 +966,7 @@
 						
 						<div class="sr-only project-description" data-images="pix/WEB/WEB-07.jpg, pix/WEB/WEB-08.jpg,pix/WEB/WEB-09.jpg,pix/WEB/WEB-10.jpg,pix/WEB/WEB-11.jpg,pix/WEB/WEB-12.jpg,pix/WEB/WEB-14.jpg,pix/WEB/WEB-15.jpg,pix/WEB/WEB-13.jpg,pix/WEB/WEB-03.jpg,pix/WEB/WEB-04.jpg,pix/WEB/WEB-05.jpg,pix/WEB/WEB-06.jpg" >
 						
-							<p>R&eacute;alisation et maintenance de designs adaptables ("responsive") et corporate: lisibles sur tout type de support &rarr; Desktop, Tablet, Phone. </p>
+							<p>Réalisation et maintenance de designs adaptables ("responsive") et corporate: lisibles sur tout type de support &rarr; Desktop, Tablet, Phone. </p>
 							
 							<p>Technologies/Frameworks: Balsamiq Mockup, Figma, Adobe XD, HTML5, CSS3, SASS-SCSS, CSS grid, Bootstrap, Atlassian Confluence</p>
 							<p>&nbsp;</p>
@@ -1021,7 +988,7 @@
 						
 						<div class="sr-only project-description" data-images="pix/WEB2/WEB2-01.jpg,pix/WEB2/WEB2-02.jpg,pix/WEB2/WEB2-03.jpg,pix/WEB2/WEB2-04.jpg,pix/WEB2/WEB2-05.jpg,pix/WEB2/WEB2-06.jpg" >
 						
-							<p>Cr&eacute;ation de designs adaptables ("responsive") pour clients priv&eacute;s: lisibles sur tout type de support &rarr; Desktop, Tablet, Phone.</p>
+							<p>Création de designs adaptables ("responsive") pour clients privés: lisibles sur tout type de support &rarr; Desktop, Tablet, Phone.</p>
 							
 							<p>Technologies/Frameworks: Balsamiq Mockup, Figma, Adobe XD, HTML5, CSS3, SASS-SCSS, CSS grid, Bootstrap</p>
 							<p>&nbsp;</p>
@@ -1034,24 +1001,24 @@
 						<img class="img-responsive project-image" src="assets/images/thumb_VIDEO.png"  alt="Videos realisations"><!--Project thumb -->
 						
 						<div class="hover-mask">
-							<h2 class="project-title">&Eacute;dition et Cr&eacute;ation de Vid&eacute;os</h2><!--Project Title -->
-							<p>Graphisme / Vid&eacute;o</p><!--Project Subtitle -->
+							<h2 class="project-title">Édition et Création de Vidéos</h2><!--Project Title -->
+							<p>Graphisme / Vidéo</p><!--Project Subtitle -->
 						</div>
 						
 						<!--==== Project Preview HTML ====-->
 						
 						<div class="sr-only project-description" data-images="pix/VID/info-message-contact-FR.jpg,pix/VID/info-message-real-FR.jpg" >
 						
-							<p>R&eacute;alisation compl&egrave;te et mise &agrave; jour de vid&eacute;os d'entreprise et priv&eacute;es. Regardez la bande-annonce !<br/>
-							Attention: les vid&eacute;os montr&eacute;es dans la bande-annonce ont &eacute;t&eacute; acc&eacute;l&eacute;r&eacute;es pour les besoins de celle-ci.</p>
+							<p>Réalisation complète et mise à jour de vidéos d'entreprise et privées. Regardez la bande-annonce !<br/>
+							Attention: les vidéos montrées dans la bande-annonce ont été accélérées pour les besoins de celle-ci.</p>
 							<p>Logiciels: Adobe Premiere, Adobe After Effects, Audition et Adobe Illustrator/Photoshop</p>
-							<h2 class="text-center" style="margin-bottom: 5.5%;">&darr;Vid&eacute;os - Bande-Annonce&darr;</h2>
+							<h2 class="text-center project-preview-heading-mb-55">&darr;Vidéos - Bande-Annonce&darr;</h2>
 							<video id="mavideo"  width="960" controls poster="pix/VID/poster-01.jpg">
 								<source src="pix/VID/vid-01.mp4" type="video/mp4">
 							  Your browser does not support the video tag.
 							</video>
 							<p>&nbsp;</p>
-								<h2 class="text-center" style="margin-bottom: 4.5%;">&darr;Infos - Contactez-moi !&darr;</h2>
+								<h2 class="text-center project-preview-heading-mb-45">&darr;Infos - Contactez-moi !&darr;</h2>
 								<p>&nbsp;</p>
 							<!--<p class="text-center"><a class="btn btn-color1" href="#external-link"><i class="fa fa-arrow-right"></i>Visit Website</a></p>-->
 						</div>
@@ -1060,21 +1027,21 @@
                     
 					<article class="project-item 3D graphisme video">
 						
-						<img class="img-responsive project-image" src="assets/images/thumb_3D.png"  alt="Réalisations 3D"><!--Project thumb -->
+						<img class="img-responsive project-image" src="assets/images/thumb_3D.png"  alt="RÃ©alisations 3D"><!--Project thumb -->
 						
 						<div class="hover-mask">
-							<h2 class="project-title">R&eacute;alisations 3D</h2><!--Project Title -->
-							<p>Graphisme / 3D / Vid&eacute;o</p><!--Project Subtitle -->
+							<h2 class="project-title">Réalisations 3D</h2><!--Project Title -->
+							<p>Graphisme / 3D / Vidéo</p><!--Project Subtitle -->
 						</div>
 						
 						<!--==== Project Preview HTML ====-->
 						
 						<div class="sr-only project-description" data-images="pix/3D/3D_01.jpg,pix/3D/3D_02.jpg,pix/3D/3D_03.jpg,pix/3D/3D_04.jpg,pix/3D/3D_05.jpg,pix/3D/3D_06.jpg,pix/3D/3D_07.jpg,pix/3D/3D_08.jpg,pix/3D/3D_09.jpg,pix/3D/3D_10.jpg,pix/GRA/GRA-04.jpg" >
 						
-							<p>Diverses r&eacute;alisations 3D pour des clients ou pour le plaisir...</p>
+							<p>Diverses réalisations 3D pour des clients ou pour le plaisir...</p>
 							<p>Logiciel: Blender</p>
 							<p class="text-center">
-								<h2 class="text-center" style="margin-bottom: 5.5%;">&darr;Vid&eacute;os&darr;</h2>
+								<h2 class="text-center project-preview-heading-mb-55">&darr;Vidéos&darr;</h2>
 								<script type="text/javascript">
 									//https://stackoverflow.com/questions/32335076/html5-video-how-to-play-two-videos-in-one-video-element
 									var myvid = document.getElementById('myvideo');
@@ -1099,7 +1066,7 @@
 								  Your browser does not support the video tag.
 								</video>
 								<p>&nbsp;</p>
-								<h2 class="text-center" style="margin-bottom: 4.5%;">&darr;Images rendues&darr;</h2>
+								<h2 class="text-center project-preview-heading-mb-45">&darr;Images rendues&darr;</h2>
 								<p>&nbsp;</p>
 							</p>
 						</div>
@@ -1107,7 +1074,7 @@
 					</article><!--End Project Item -->
 					<article class="project-item graphisme web mockup">
 						
-						<img class="img-responsive project-image" src="assets/images/thumb_MOCK.png"  alt="R&eacute;alisations de Mockups"><!--Project thumb -->
+						<img class="img-responsive project-image" src="assets/images/thumb_MOCK.png"  alt="Réalisations de Mockups"><!--Project thumb -->
 						
 						<div class="hover-mask">
 							<h2 class="project-title">Mockup</h2><!--Project Title -->
@@ -1118,7 +1085,7 @@
 						
 						<div class="sr-only project-description" data-images="pix/MOCK/MOCK-01.jpg,pix/MOCK/MOCK-02.jpg,pix/MOCK/MOCK-03.jpg,pix/MOCK/MOCK-04.jpg,pix/MOCK/MOCK-05.jpg,pix/MOCK/MOCK-06.jpg,pix/MOCK/MOCK-07.jpg" >
 						
-							<p>R&eacute;alisations de Mockups pour applications web et sites internet: testing et prototyping.</p>
+							<p>Réalisations de Mockups pour applications web et sites internet: testing et prototyping.</p>
 							
 							<p>Logiciels: Figma et Adobe XD</p>
 							<p>&nbsp;</p>
@@ -1128,7 +1095,7 @@
 					</article><!--End Project Item -->
 					<article class="project-item illustration">
 						
-						<img class="img-responsive project-image" src="assets/images/thumb_JMJ.png"  alt="R&eacute;alisations Journaux, Magazines et Jeux"><!--Project thumb -->
+						<img class="img-responsive project-image" src="assets/images/thumb_JMJ.png"  alt="Réalisations Journaux, Magazines et Jeux"><!--Project thumb -->
 						
 						<div class="hover-mask">
 							<h2 class="project-title">Journaux, Magazines et Jeux</h2><!--Project Title -->
@@ -1139,9 +1106,9 @@
 						
 						<div class="sr-only project-description" data-images="pix/JMJ/JMJ-01.jpg,pix/JMJ/JMJ-02.jpg,pix/JMJ/JMJ-03.jpg,pix/JMJ/JMJ-04.jpg,pix/JMJ/JMJ-05.jpg,pix/JMJ/JMJ-06.jpg,pix/JMJ/JMJ-07.jpg,pix/JMJ/JMJ-08.jpg,pix/JMJ/JMJ-09.jpg,pix/JMJ/JMJ-10.jpg,pix/JMJ/JMJ-11.jpg,pix/JMJ/JMJ-12.jpg,pix/JMJ/JMJ-13.jpg,pix/JMJ/JMJ-14.jpg,pix/JMJ/JMJ-15.jpg,pix/JMJ/JMJ-16.jpg,pix/JMJ/JMJ-17.jpg,pix/JMJ/JMJ-18.jpg,pix/JMJ/JMJ-19.jpg,pix/JMJ/JMJ-20.jpg,pix/JMJ/JMJ-21.jpg" >
 						
-							<p>Cr&eacute;ation d'illustrations et de mini-r&eacute;cits pour magazines, jeux de soci&eacute;t&eacute; et de cartes.</p>
+							<p>Création d'illustrations et de mini-récits pour magazines, jeux de société et de cartes.</p>
 							
-							<p>Encarts dans journaux (r&eacute;gionaux et provinciaux).</p>
+							<p>Encarts dans journaux (régionaux et provinciaux).</p>
 							<p>&nbsp;</p>
 							<!--<p class="text-center"><a class="btn btn-color1" href="#external-link"><i class="fa fa-arrow-right"></i>Visit Website</a></p>-->
 						</div>
@@ -1162,18 +1129,18 @@
             </div>
             <div class="patrons__logos">
                 <!--Even number of patrons logos otherwise use flex to center last row or fix with CSS grid. Both here: https://stackoverflow.com/questions/46276793/how-to-center-elements-on-the-last-row-in-css-grid-->
-                    <img src="assets/patrons/patrons_CE.png" alt="Commission Europ&eacute;enne">
-                    <img src="assets/patrons/patrons_CUE.png" alt="Conseil de l'Union Europ&eacute;enne">
-                    <img src="assets/patrons/patrons_ECC.png" alt="Centre de Convention Europ&eacute;enne - Luxembourg">
-                    <img src="assets/patrons/patrons_CIE.png" alt="Centre Interinstitutionel Européen - Overijse (Bruxelles)">
+                    <img src="assets/patrons/patrons_CE.png" alt="Commission Européenne">
+                    <img src="assets/patrons/patrons_CUE.png" alt="Conseil de l'Union Européenne">
+                    <img src="assets/patrons/patrons_ECC.png" alt="Centre de Convention Européenne - Luxembourg">
+                    <img src="assets/patrons/patrons_CIE.png" alt="Centre Interinstitutionel EuropÃ©en - Overijse (Bruxelles)">
                     <img src="assets/patrons/patrons_casterman.png" alt="Editions Casterman">
                     <img src="assets/patrons/patrons_tartamudo.png" alt="Editions Tartamudo">
                     <img src="assets/patrons/patrons_apis.png" alt="Apis Consulting">
 					<img src="assets/patrons/patrons_pragmacom.png" alt="Pragmacom">
-					<!--<img src="assets/patrons/patrons_tartamudo.png" alt="Service de la Jeunesse - Communauté Française de Belgique">
+					<!--<img src="assets/patrons/patrons_tartamudo.png" alt="Service de la Jeunesse - CommunautÃ© FranÃ§aise de Belgique">
 					<img src="assets/patrons/logo-forbes.png" alt="Trees and People">-->
-					<img src="assets/patrons/patrons_zar.png" alt="Une Zine à r&ecirc;ves">
-					<img src="assets/patrons/patrons_cara.png" alt="Cara et associ&eacute;s">
+					<img src="assets/patrons/patrons_zar.png" alt="Une Zine Ã  rêves">
+					<img src="assets/patrons/patrons_cara.png" alt="Cara et associés">
 
         </section>
 		<!-- ==============================================
@@ -1190,17 +1157,17 @@
 					
 						<h2 class="big-text">Je fais partie d'un Collectif de Visual Thinkers</h2>
 						
-						<p class="lead">"Visual Thinkers?!" Mais, c'est quoi &ccedil;a?</p>
+						<p class="lead">"Visual Thinkers?!" Mais, c'est quoi ça?</p>
 					
-						<p>Ce terme renferme plusieurs <strong>techniques de capture, organisation</strong> et <strong>m&eacute;morisation graphiques</strong>: <strong>Graphic Recording</strong>, <strong>Visual Recording</strong> et <strong>Harvesting</strong> en passant par le <strong>Sketch Note</strong>.
+						<p>Ce terme renferme plusieurs <strong>techniques de capture, organisation</strong> et <strong>mémorisation graphiques</strong>: <strong>Graphic Recording</strong>, <strong>Visual Recording</strong> et <strong>Harvesting</strong> en passant par le <strong>Sketch Note</strong>.
 						<br/><br/>
-						<em>"Un dessin vaut mieux qu'un long discours"</em>, n'est-ce pas? Et bien, nous faisons appel &agrave; vos capacit&eacute;s cognitives, cr&eacute;atrices et visuelles pour cr&eacute;er, nourrir et retenir les propos de r&eacute;unions, d&eacute;bats ou &eacute;venements... en dessins.
+						<em>"Un dessin vaut mieux qu'un long discours"</em>, n'est-ce pas? Et bien, nous faisons appel à vos capacités cognitives, créatrices et visuelles pour créer, nourrir et retenir les propos de réunions, débats ou évenements... en dessins.
 						</p>
-						<p>Vous avez finalement devant les yeux le compte rendu dessin&eacute; ou transpos&eacute; graphiquement de ceux-ci. Et de mani&egrave;re plus p&eacute;renne et claire pour une m&eacute;morisation durable et constructive... Aussi, cela constitue un mat&eacute;riel plus convivial &agrave; partager, &agrave; se rem&eacute;morer et pour relancer la discussion entre coll&egrave;gues ult&eacute;rieurement.
+						<p>Vous avez finalement devant les yeux le compte rendu dessiné ou transposé graphiquement de ceux-ci. Et de manière plus pérenne et claire pour une mémorisation durable et constructive... Aussi, cela constitue un matériel plus convivial à partager, à se remémorer et pour relancer la discussion entre collègues ultérieurement.
 						</p>
 						<br/>
 						<br/>
-						<p class="text-center"><a class="btn btn-color1" href="https://visualthinkers.eu/" target="_blank"><i class="fa fa-arrow-right"></i>Vers le site &quot;VisualThinkers.eu&quot;</a></p>
+						<p class="text-center"><a class="btn btn-color1" href="https://visualthinkers.eu/" target="_blank"><i class="fa fa-arrow-right"></i>Vers le site "VisualThinkers.eu"</a></p>
 						<p>&nbsp;</p>
 					</div>
 					<div class="col-sm-6 scrollimation fade-right d1">
@@ -1227,9 +1194,9 @@
 					
 						<h2 class="big-text">Contactez-Moi</h2>
 						
-						<p class="lead">Je suis disponible pour tout type de travail graphique, d'illustration ou de BD. Ou n'h&eacute;sitez pas &agrave; tout simplement me poser vos questions. Je suis impatient d'&eacute;changer des id&eacute;es et de vous rencontrer.</p>
+						<p class="lead">Je suis disponible pour tout type de travail graphique, d'illustration ou de BD. Ou n'hésitez pas à tout simplement me poser vos questions. Je suis impatient d'échanger des idées et de vous rencontrer.</p>
 					
-						<p>Merci et &agrave; bient&ocirc;t!<br/>
+						<p>Merci et à bientôt!<br/>
 						Vincent Henin - Vhenin
 						</p>
 					
@@ -1244,7 +1211,7 @@
 						<div class="form-group">
 						  <label class="control-label" for="contact-name">Name</label>
 						  <div class="controls">
-							<input id="contact-name" name="contactName" placeholder="Nom et Pr&eacute;nom" class="form-control requiredField" data-new-placeholder="Your name" type="text" data-error-empty="Merci d'entrer votre nom" aria-required="true" aria-label="Name - required field" required>
+							<input id="contact-name" name="contactName" placeholder="Nom et Prénom" class="form-control requiredField" data-new-placeholder="Your name" type="text" data-error-empty="Merci d'entrer votre nom" aria-required="true" aria-label="Name - required field" required>
 							<i class="fa fa-user"></i>
 						  </div>
 						</div><!-- End name input -->
@@ -1252,7 +1219,7 @@
 						<div class="form-group">
 						  <label class="control-label" for="contact-mail">Email</label>
 						  <div class="controls">
-							<input id="contact-mail" name="email" placeholder="e-mail" class="form-control requiredField" data-new-placeholder="Your email" type="email" data-error-empty="Pri&egrave;re d'entrer votre email" data-error-invalid="Adresse email non-valide" aria-required="true" aria-label="Email - champ requis" required>
+							<input id="contact-mail" name="email" placeholder="e-mail" class="form-control requiredField" data-new-placeholder="Your email" type="email" data-error-empty="Prière d'entrer votre email" data-error-invalid="Adresse email non-valide" aria-required="true" aria-label="Email - champ requis" required>
 							<i class="fa fa-envelope"></i>
 						  </div>
 						</div><!-- End email input -->
@@ -1260,20 +1227,20 @@
 						<div class="form-group">
 						  <label class="control-label" for="contact-message">Message</label>
 							<div class="controls">
-								<textarea id="contact-message" name="comments"  placeholder="Votre message" class="form-control requiredField" data-new-placeholder="Your message" rows="6" data-error-empty="Pri&egrave;re d'entrer votre message" aria-required="true" aria-label="Message - champ requis" required></textarea>
+								<textarea id="contact-message" name="comments"  placeholder="Votre message" class="form-control requiredField" data-new-placeholder="Your message" rows="6" data-error-empty="Prière d'entrer votre message" aria-required="true" aria-label="Message - champ requis" required></textarea>
 								<i class="fa fa-comment"></i>
 							</div>
 							<div class="form-group-remark">
 								<label class="remark control-label" for="contact-remark">Remarque(s)</label>
 								<div class="controls">
-									<input id="contact-remark" name="remark" placeholder="Votre remarque" data-new-placeholder="Your remark" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" data-error-empty="Pri&egrave;re d'entrer votre remarque">
+									<input id="contact-remark" name="remark" placeholder="Votre remarque" data-new-placeholder="Your remark" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" data-error-empty="Prière d'entrer votre remarque">
 									<i class="fa fa-bullhorn"></i>
 								</div>
 							</div>
 						</div>
 						<!-- End textarea -->
 						<!--REMOVE DISABLED BOOLEAN ATTRIBUTE WHEN CONTACT FORM ISSUE IS RESOLVED-->
-						<p><button name="submit" type="submit" class="btn btn-color2 btn-block" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Message Envoy&eacute;!"><i class="fa fa-envelope"></i>ENVOYER</button></p>
+						<p><button name="submit" type="submit" class="btn btn-color2 btn-block" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Message Envoyé!"><i class="fa fa-envelope"></i>ENVOYER</button></p>
 						<input type="hidden" name="submitted" id="submitted" value="true" />
 						
 					</form><!-- End contact-form -->
@@ -1314,7 +1281,7 @@
 				<p class="text-center">&copy; <script type="text/javascript">
 					var d=new Date();
 					document.write(d.getFullYear());
-					</script> - Tous droits r&eacute;serv&eacute;s&nbsp;&nbsp;//&nbsp;&nbsp;<a href="#">Vincent Henin - Vhenin</a></p>
+					</script> - Tous droits réservés&nbsp;&nbsp;//&nbsp;&nbsp;<a href="#">Vincent Henin - Vhenin</a></p>
 			
 			</div>
 			
@@ -1425,13 +1392,13 @@
 					window.location.href = "thank-you.html";
 				} else {
 					response.json().then(function(data) {
-						alert("Oops! Il y a eu un problème lors de l'envoi de votre formulaire");
+						alert("Oops! Il y a eu un problÃ¨me lors de l'envoi de votre formulaire");
 						var buttonCopy = button.innerHTML;
 						button.innerHTML = buttonCopy;
 					});
 				}
 			}).catch(function(error) {
-				alert("Oops! Il y a eu un problème lors de l'envoi de votre formulaire");
+				alert("Oops! Il y a eu un problÃ¨me lors de l'envoi de votre formulaire");
 				var buttonCopy = button.innerHTML;
 				button.innerHTML = buttonCopy;
 			});
@@ -1441,3 +1408,4 @@
 	</script>
 	</body>
 </html>
+

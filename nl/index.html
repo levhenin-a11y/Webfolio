@@ -1,6 +1,6 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="nl-NL" class="no-js">
-	<head profile="http://dublincore.org/documents/2008/08/04/dc-html/">
+	<head>
 		<meta charset="utf-8">
 
 		<!-- ==============================================
@@ -18,7 +18,7 @@
         <meta name="DC.Creator" lang="nl" content="Vincent Henin" />
 		
 		<title>Vhenin - Vincent Henin / Webfolio // Tekening, Illustratie en Grafische Vormgeving</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 		<!-- ==============================================
@@ -43,9 +43,7 @@
 		<!-- ==============================================
 		Fonts
 		=============================================== -->
-		<!--<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,200,500,600,700' rel='stylesheet' type='text/css'>-->
 		<link href="https://fonts.googleapis.com/css?family=Lato:400,400italic,900" rel="stylesheet" type="text/css">
-		<!--<link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>-->
         <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet" type="text/css">
 		<!-- ==============================================
 		JS
@@ -88,7 +86,7 @@
 			
 				<div class="navbar-header">
 				
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav" aria-controls="site-nav" aria-expanded="false" aria-label="Navigatie tonen of verbergen">
 						<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 					</button>
 					
@@ -132,9 +130,9 @@
 							<a href="#contact" class="scrollto">Contact</a>
 						</li>
 						<li>
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLanguages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="flag-icon flag-icon-nl">&nbsp;</span>&nbsp;Nederlands&nbsp;<span class="fa fa-chevron-down"></span></a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLanguages">
-                        		<a class="dropdown-item" href="../index.html"><span class="flag-icon flag-icon-fr">&nbsp;</span><span class="lang-in-menu">Fran&ccedil;ais</span></a>
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLanguages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="navbarDropdownMenuLanguages"><span class="flag-icon flag-icon-nl">&nbsp;</span>&nbsp;Nederlands&nbsp;<span class="fa fa-chevron-down"></span></a>
+							<div class="dropdown-menu" id="navbarDropdownMenuLanguages" aria-labelledby="navbarDropdownLanguages">
+                        		<a class="dropdown-item" href="../index.html"><span class="flag-icon flag-icon-fr">&nbsp;</span><span class="lang-in-menu">Français</span></a>
 								<br/>
                         		<a class="dropdown-item" href="../en/index.html"><span class="flag-icon flag-icon-us">&nbsp;</span><span class="lang-in-menu">English</span></a>
 							</div>
@@ -152,16 +150,6 @@
 		=============================================== -->
 		<header id="home">
 		
-			<!--<div class="container_park text-center">
-				<div style="width:50%; margin: 0 auto; margin-top: 1%;"><media query for small devices for width and margin and externalize???-->
-					<!--<div class="fb-like" data-href="http://www.vhenin.be/" data-width="100%" data-show-faces="true" data-stream="true" data-header="true" data-share="true" data-layout="button_count"></div>
-				</div>
-				<div style="width:50%; margin: 0 auto; margin-top: 0.5%;">
-					Share: 	<a href="http://www.facebook.com/sharer/sharer.php?u=http://www.vhenin.be/" title="Share on Facebook" target="_blank" class="btn btn-facebook">
-								<i class="fa fa-facebook"></i> Facebook
-							</a>
-				</div>http://www.tumblr.com/share/link?url=[URL]&amp;name=[title]&amp;description=[content]
-			</div>-->
 			<div class="container_park text-center">
 				<span class="shares"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.vhenin.be%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore" title="Deel VHENIN VINCENT HENIN Webfolio via Facebook" target="_blank"><i class="fa fa-facebook fa-fw"></i></a></span>
 				<span class="shares"><a href="http://www.tumblr.com/share/link?url=www.vhenin.be&amp;name=VHENIN VINCENT HENIN Webfolio]&amp;description=Vhenin's works: illustration, Comics, Webdesign and Webmastering, Graphical Layout, Storyboard, ..." title="Deel VHENIN VINCENT HENIN Webfolio via Tumblr" target="_blank"><i class="fa fa-tumblr fa-fw"></i></a></span>
@@ -176,7 +164,7 @@
 				
 				<h1>Vincent Henin <span class="small-lowercase">a.k.a</span> Vhenin</h1>
 				
-				<p>Strips / Illustratie / Storyboard / Grafische Afbeeldingen / Graphic Recording <span style="font-size: small;">&amp;</span> Harvesting</p>
+				<p>Strips / Illustratie / Storyboard / Grafische Afbeeldingen / Graphic Recording <span class="small-inline-ampersand">&amp;</span> Harvesting</p>
 				
 				
 			</div>
@@ -186,26 +174,6 @@
 		<!-- ==============================================
 		COPYRIGHT
 		=============================================== -->
-		<!--attendre r�ponse Qthemes support et garder en workaround-->
-		<!--
-		<section id="share" class="add-padding bg-color2">
-			<div class="container">
-				<h2 class="section-title big-text scrollimation fade-up">Like &amp; Share</h2>
-				<div class="row">
-					
-					<div style="width:50%; margin: 0 auto; margin-top: 1%;"><!--media query for small devices for width and margin and externalize???-->
-						<!--<div class="fb-like" data-href="http://www.vhenin.be/" data-width="100%" data-show-faces="true" data-stream="true" data-header="true" data-share="true" data-layout="button_count"></div>
-					</div>
-					<div class="scrollimation scale-in" style="width:50%; margin: 0 auto; margin-top: 1%; text-align: center;">
-						Share: 	<a href="http://www.facebook.com/sharer/sharer.php?u=http://www.vhenin.be/" title="Share on Facebook" target="_blank" class="btn btn-facebook">
-									<i class="fa fa-facebook"></i> Facebook
-								</a>
-					</div>
-					
-				</div>
-			</div>
-		</section>
-		-->
 		<section id="links" class="add-padding bg-color2">
 		
 			<div class="container">
@@ -245,7 +213,7 @@
 					</div>
 					
 					<!--clear both: to enable texts in p above to be bigger without exploding grid structure-->
-					<div style="clear: both;">&nbsp;<br/><br/></div>
+					<div class="clear-both-spacer">&nbsp;<br/><br/></div>
 					
 					<!--creer une page FB definitive, puis remplacer-->
                     <div class="col-sm-4 service-item color1 scrollimation scale-in d4">
@@ -304,7 +272,7 @@
 						<p class="lead">Hallo, ik ben geboren te Brussel in 1979.<br/>Ik heb <strong>4 strips</strong> getekend en samengewerkt tot anderen onder mijn <em>echte naam</em>, <strong>Vincent Henin</strong>, gepubliceerd door <strong>Casterman</strong>. Onder het pseudoniem <strong>Vhenin</strong> maakte ik 2 strips van het duo '<strong>Blateman &amp; Bobine</strong>' met de scenarist Tarek. Maar niet alleen...
 						</p>
 					
-						<p>Ik ben tegelijkertijd bezig met een carri&egrave;re in <strong>(Motion) Graphic Design</strong>, <strong>Illustratie</strong>, <strong>Webdesign</strong> en als een <strong>Interface Designer</strong>. Sinds kort bied ik ook diensten aan zoals <strong>Graphic Recorder</strong> en <strong>Visual Thinker</strong> voor klanten zoals de <strong>Europese Commissie</strong>, de '<strong>EU DataViz</strong>, het <strong>Europees congrescentrum (Luxemburg)</strong>, <strong>Trees &amp; People</strong> en vele anderen.</p>
+						<p>Ik ben tegelijkertijd bezig met een carrière in <strong>(Motion) Graphic Design</strong>, <strong>Illustratie</strong>, <strong>Webdesign</strong> en als een <strong>Interface Designer</strong>. Sinds kort bied ik ook diensten aan zoals <strong>Graphic Recorder</strong> en <strong>Visual Thinker</strong> voor klanten zoals de <strong>Europese Commissie</strong>, de '<strong>EU DataViz</strong>, het <strong>Europees congrescentrum (Luxemburg)</strong>, <strong>Trees &amp; People</strong> en vele anderen.</p>
 						<p>Het is om deze diensten onafhankelijk aan te bieden dat mijn <strong>freelance 'Vhenin'</strong> activiteit werd geboren.<br/>Ontdek beide kanten op deze site.</p>
 						<p>Wil je <u>alles</u> in detail over mij weten?<br/>Download mijn bio:</p>
 						<p class="text-center">
@@ -576,9 +544,9 @@
 						<p class="lead">Ik heb wat beloningen gekregen... Niet genoeg om ophef over te maken, maar het is de moeite waard om er even over te praten.
 						</p>
 						
-						<p><span class="podium"></span>&nbsp;&nbsp;De ereprijs voor de <strong>5 best verkochte strips (berekend over 3 maanden)</strong> in de Franstalige FNAC's van Belgi&euml; - Met het album '<strong>De Reizen van Alex - Carthago</strong>'.</p>
+						<p><span class="podium"></span>&nbsp;&nbsp;De ereprijs voor de <strong>5 best verkochte strips (berekend over 3 maanden)</strong> in de Franstalige FNAC's van België - Met het album '<strong>De Reizen van Alex - Carthago</strong>'.</p>
 						<p><span class="trophee"></span>&nbsp;&nbsp;De <strong>Prijs voor de Toekomst</strong> van de <strong>Belgian Chamber of Comics Experts (BCCE)</strong> voor het album '<strong >De Reizen van Alex - Jeruzalem</strong>'.</p>
-						<p><span class="medal"></span>&nbsp;&nbsp;De <strong>'Grand Contributor' Award</strong> van het <strong>Directoraat-generaal DIGIT van de Europese Commissie</strong> voor de grootste bijdrage aan het cre&euml;ren van artikelen <strong>in de Newsroom van de Europese Commissie</strong>.</p>
+						<p><span class="medal"></span>&nbsp;&nbsp;De <strong>'Grand Contributor' Award</strong> van het <strong>Directoraat-generaal DIGIT van de Europese Commissie</strong> voor de grootste bijdrage aan het creëren van artikelen <strong>in de Newsroom van de Europese Commissie</strong>.</p>
 					</div>
 				
 				</div>
@@ -701,7 +669,7 @@
 							<p>Teksten-Tekeningen-Kleuren: Vincent Henin</p>
 								
 							<p>De stad van vrede, altijd levendig en actueel, wordt onthuld tijdens de reis van Alix en Enak. Vanaf de stichting direct verbonden met het Joodse volk
-							tot zijn annexatie aan het Romeinse rijk. Ontdek zijn geschiedenis, zijn architectuur en zijn grote koningen... Aan het einde van het boek, de belangrijke sites om te bezoeken als je naar Isra&euml;l gaat.
+							tot zijn annexatie aan het Romeinse rijk. Ontdek zijn geschiedenis, zijn architectuur en zijn grote koningen... Aan het einde van het boek, de belangrijke sites om te bezoeken als je naar Israël gaat.
 							</p>
 								<p>&nbsp;</p>
 								<!--<p class="text-center"><a class="btn btn-color1" href="#external-link"><i class="fa fa-arrow-right"></i>Visit Website</a></p>-->
@@ -725,7 +693,7 @@
 							<p>Regie: Jacques Martin / Categorie: Historische en didactische strips / 56 pagina's / Casterman uitgeverij</p>
 							<p>Teksten-Tekeningen-Kleuren: Vincent Henin</p>
 							
-							<p>Petra, de stad uit steen gehouwen heeft geen geheimen meer voor je. Ontdek met Alex, de stad gesticht door de Nabatee&euml;rs, ware genie&euml;n van architectuur en commercie. 
+							<p>Petra, de stad uit steen gehouwen heeft geen geheimen meer voor je. Ontdek met Alex, de stad gesticht door de Nabateeërs, ware genieën van architectuur en commercie. 
 								Profiteer daarnaast van de toeslag op Palmyra en Baalbek.
 							</p>
 							<p>&nbsp;</p>
@@ -888,7 +856,7 @@
 						
 						<div class="sr-only project-description" data-images="../pix/detectives/1.gif,../pix/detectives/2.gif,../pix/detectives/3.gif,../pix/detectives/4.gif,../pix/detectives/5.gif,../pix/detectives/6.gif,../pix/detectives/7.gif,../pix/detectives/8.gif,../pix/detectives/9.gif,../pix/detectives/10.gif,../pix/detectives/11.gif,../pix/detectives/12.gif,../pix/detectives/13.gif,../pix/detectives/14.gif,../pix/detectives/15-new.gif,../pix/detectives/16.gif,../pix/detectives/17.gif,../pix/detectives/18.gif,../pix/detectives/20.gif,../pix/detectives/21.gif,../pix/detectives/22-new.gif,../pix/detectives/23.gif,../pix/detectives/25.gif,../pix/detectives/26-new.gif,../pix/detectives/27.gif,../pix/detectives/28.gif,../pix/detectives/29.gif,../pix/detectives/30.gif,../pix/detectives/31.gif,../pix/detectives/32.gif,../pix/detectives/34-new.gif,../pix/detectives/35.gif,../pix/detectives/37.gif,../pix/detectives/38.gif" >
 						
-							<p>Sherlock Holmes en Watson, Maigret, Hercule Poirot verzamelden zich op mysterieuze wijze in een treincoupé...</p>
+							<p>Sherlock Holmes en Watson, Maigret, Hercule Poirot verzamelden zich op mysterieuze wijze in een treincoupÃ©...</p>
 							
 							<p>Wie zit hierachter?...
 							</p>
@@ -934,7 +902,7 @@
 						
 						<div class="sr-only project-description" data-images="../pix/GRA/fiche_logos_visual_ID_01.jpg,../pix/GRA/fiche_logos_visual_ID_02.jpg,../pix/GRA/GRA-01.jpg,../pix/GRA/GRA-bis-01.jpg,../pix/GRA/GRA-bis-02.jpg,../pix/GRA/GRA-16.jpg,../pix/GRA/GRA-17.jpg,../pix/GRA/GRA-bis-03.jpg,../pix/GRA/GRA-09.jpg,../pix/GRA/GRA-10.jpg,../pix/GRA/GRA-11.jpg,../pix/GRA/GRA-12.jpg,../pix/GRA/GRA-bis-04.jpg,../pix/GRA/GRA-bis-05.jpg,../pix/GRA/GRA-bis-06.jpg,../pix/GRA/GRA-bis-07.jpg" >
 						
-							<p>Partners: Europese Commissie, Apis Consulting, Une Zine &agrave; R&ecirc;ves, Une Chaise sur le toit, Miss V. Hats, Champagne Tissier et Fils, Conseil de la Jeunesse de la Communaut&eacute; Fran&ccedil;aise de Belgique, Cara et associ&eacute;s, MushRoom Retrogaming, Pianofabriek ...</p>
+							<p>Partners: Europese Commissie, Apis Consulting, Une Zine à Rêves, Une Chaise sur le toit, Miss V. Hats, Champagne Tissier et Fils, Conseil de la Jeunesse de la Communauté Française de Belgique, Cara et associés, MushRoom Retrogaming, Pianofabriek ...</p>
 							
 							<p>Neem contact met me op als je een idee hebt om te ontwikkelen. Ik heb er altijd zin in!
 							</p>
@@ -1024,7 +992,7 @@
 						
 						<div class="sr-only project-description" data-images="../pix/WEB2/WEB2-01.jpg,../pix/WEB2/WEB2-02.jpg,../pix/WEB2/WEB2-03.jpg,../pix/WEB2/WEB2-04.jpg,../pix/WEB2/WEB2-05.jpg,../pix/WEB2/WEB2-06.jpg" >
 						
-							<p>Creatie van responsieve en professionele ontwerpen voor priv&eacute;-klanten: leesbaar op elk type device &rarr; Desktop, tablet, telefoon.</p>
+							<p>Creatie van responsieve en professionele ontwerpen voor privé-klanten: leesbaar op elk type device &rarr; Desktop, tablet, telefoon.</p>
 							
 							<p>Technologies/Frameworks: Balsamiq Mockup, Figma, Adobe XD, HTML5, CSS3, SASS-SCSS, CSS grid, Bootstrap</p>
 							<p>&nbsp;</p>
@@ -1049,13 +1017,13 @@
 								Aandacht: alle films zijn versneld voor deze trailer.</p>
 							
 							<p>Software: Adobe Premiere, Adobe After Effects, Audition en Adobe Illustrator/Photoshop</p>
-							<h2 class="text-center" style="margin-bottom: 5.5%;">&darr;Videos - Trailer&darr;</h2>
+							<h2 class="text-center project-preview-heading-mb-55">&darr;Videos - Trailer&darr;</h2>
 							<video id="mavideo"  width="960" controls poster="../pix/VID/poster-01.jpg">
 								<source src="../pix/VID/vid-01.mp4" type="video/mp4">
 							  Your browser does not support the video tag.
 							</video>
 							<p>&nbsp;</p>
-								<h2 class="text-center" style="margin-bottom: 4.5%;">&darr;Info - Neem contact op !&darr;</h2>
+								<h2 class="text-center project-preview-heading-mb-45">&darr;Info - Neem contact op !&darr;</h2>
 								<p>&nbsp;</p>
 							<!--<p class="text-center"><a class="btn btn-color1" href="#external-link"><i class="fa fa-arrow-right"></i>Visit Website</a></p>-->
 						</div>
@@ -1077,7 +1045,7 @@
 							<p>Diverse 3D creaties voor klanten of voor de fun...</p>
 							<p>Software: Blender</p>
 							<p class="text-center">
-								<h2 class="text-center" style="margin-bottom: 5.5%;">&darr;Videos&darr;</h2>
+								<h2 class="text-center project-preview-heading-mb-55">&darr;Videos&darr;</h2>
 								<script type="text/javascript">
 									//https://stackoverflow.com/questions/32335076/html5-video-how-to-play-two-videos-in-one-video-element
 									var myvid = document.getElementById('myvideo');
@@ -1102,7 +1070,7 @@
 								  Your browser does not support the video tag.
 								</video>
 								<p>&nbsp;</p>
-								<h2 class="text-center" style="margin-bottom: 8.5%;">&darr;Gerenderd beelden&darr;</h2>
+								<h2 class="text-center project-preview-heading-mb-85">&darr;Gerenderd beelden&darr;</h2>
 								<p>&nbsp;</p>
 							</p>
 						</div>
@@ -1168,13 +1136,13 @@
                     <img src="../assets/patrons/patrons_ECC.png" alt="European Convention Centre - Luxembourg">
                     <img src="../assets/patrons/patrons_EIC.png" alt="European Interinstitutional Centre - Overijse (Brussel)">
                     <img src="../assets/patrons/patrons_casterman.png" alt="Casterman Uitgeverij">
-                    <img src="../assets/patrons/patrons_tartamudo.png" alt="Tartamudo &Eacute;ditions">
+                    <img src="../assets/patrons/patrons_tartamudo.png" alt="Tartamudo Éditions">
                     <img src="../assets/patrons/patrons_apis.png" alt="Apis Consulting">
 					<img src="../assets/patrons/patrons_pragmacom.png" alt="Pragmacom">
-					<!--<img src="assets/patrons/patrons_tartamudo.png" alt="Service de la Jeunesse - Communauté Française de Belgique">
+					<!--<img src="assets/patrons/patrons_tartamudo.png" alt="Service de la Jeunesse - CommunautÃ© FranÃ§aise de Belgique">
 					<img src="assets/patrons/logo-forbes.png" alt="Trees and People">-->
-					<img src="../assets/patrons/patrons_zar.png" alt="Une Zine à r&ecirc;ves">
-					<img src="../assets/patrons/patrons_cara.png" alt="Cara et associ&eacute;s">
+					<img src="../assets/patrons/patrons_zar.png" alt="Une Zine Ã  rêves">
+					<img src="../assets/patrons/patrons_cara.png" alt="Cara et associés">
 
         </section>
 		<!-- ==============================================
@@ -1193,13 +1161,13 @@
 					
 						<p>Deze term omvat verschillende <strong>technieken voor het vastleggen, organiseren</strong> en <strong>grafische opslag</strong>: <strong>grafische opname</strong>, <strong>visuele opname</strong> en <strong>oogsten</strong> maar ook, via <strong>Sketch Note</strong>.
 							<br/><br/>
-							<em>"Een tekening is beter dan een lange toespraak"</em>, toch? Nou, we doen een beroep op uw cognitieve, creatieve en visuele vaardigheden om de woorden van vergaderingen, debatten of evenementen te cre&euml;ren, te voeden en vast te houden... in tekeningen.
+							<em>"Een tekening is beter dan een lange toespraak"</em>, toch? Nou, we doen een beroep op uw cognitieve, creatieve en visuele vaardigheden om de woorden van vergaderingen, debatten of evenementen te creëren, te voeden en vast te houden... in tekeningen.
 						</p>
 						<p>Je hebt eindelijk het getekende of grafisch getransponeerde verslag hiervan voor ogen. En op een meer duurzame en duidelijke manier voor lange termijn en constructieve memorisatie... Dit is ook een gebruiksvriendelijker materiaal om te gebruiken, delen, onthouden en later de discussie tussen collega's nieuw leven inblazen.
 						</p>
 						<br/>
 						<br/>
-						<p class="text-center"><a class="btn btn-color1" href="https://visualthinkers.eu/" target="_blank"><i class="fa fa-arrow-right"></i>Ga naar &quot;VisualThinkers.eu&quot;!</a></p>
+						<p class="text-center"><a class="btn btn-color1" href="https://visualthinkers.eu/" target="_blank"><i class="fa fa-arrow-right"></i>Ga naar "VisualThinkers.eu"!</a></p>
 						<p>&nbsp;</p>
 					</div>
 					<div class="col-sm-6 scrollimation fade-right d1">
@@ -1330,7 +1298,6 @@
 		<script src="../assets/js/jquery.backstretch.min.js"></script>
 		<script src="../assets/js/twitterFetcher_v10_min.js"></script>
 		<script src="https://maps.google.com/maps/api/js?sensor=true"></script>
-		<!--<script src="../assets/js/contact.js"></script>-->
 		<script src="../assets/js/scripts.js"></script>
 		
 		<script>
@@ -1421,13 +1388,13 @@
 					window.location.href = "thank-you.html";
 				} else {
 					response.json().then(function(data) {
-						alert("Oops! Il y a eu un problème lors de l'envoi de votre formulaire");
+						alert("Oops! Il y a eu un problÃ¨me lors de l'envoi de votre formulaire");
 						var buttonCopy = button.innerHTML;
 						button.innerHTML = buttonCopy;
 					});
 				}
 			}).catch(function(error) {
-				alert("Oops! Il y a eu un problème lors de l'envoi de votre formulaire");
+				alert("Oops! Il y a eu un problÃ¨me lors de l'envoi de votre formulaire");
 				var buttonCopy = button.innerHTML;
 				button.innerHTML = buttonCopy;
 			});
