@@ -46,3 +46,4 @@
 -7 ~~Footer: remove visual Thinking, Canalblog ...~~
 -8 Change text Links > Blateman & Bobine
 -9 Put accent as well on frontend dev / UI-UX expert: in the header and Gallery
+-10 Create a label design for gallery topic filters
