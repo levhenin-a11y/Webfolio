@@ -18,7 +18,7 @@ $(document).ready(function() {
 	function syncHomeMinHeight() {
 		$('#home').css({
 			'height': 'auto',
-			'min-height': ($(window).height() + 50) + 'px'
+			'min-height': ($(window).height()+50) + 'px'
 		});
 	}
 

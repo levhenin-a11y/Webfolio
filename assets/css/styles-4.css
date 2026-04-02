@@ -60,6 +60,7 @@ flex-wrap: wrap;
 justify-content: center;
 gap: 8px;
 margin: 0;
+margin-bottom: 3rem;
 padding: 0;
 list-style: none;
 }
@@ -495,7 +496,7 @@ padding: 0 12px;
 
 .shares .fa-facebook,
 .shares .fa-linkedin,
-.shares .fa-twitter,
+.shares .fa-x-twitter,
 .shares .fa-tumblr,
 .shares .fa-envelope,
 .shares .fa-pinterest {

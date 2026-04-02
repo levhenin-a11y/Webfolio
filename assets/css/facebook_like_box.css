@@ -32,69 +32,137 @@
     color: #fff
 }
 
-.facebook-feed-panel {
-	max-width: 560px;
-	margin: 14px auto 0;
-	padding: 10px 12px;
-	border-radius: 12px;
-	background: rgba(0, 0, 0, 0.32);
+.facebook-posts-panel {
+	margin-top: 0;
 	text-align: center;
+	clear: both;
 }
 
-.facebook-feed-title {
-	margin: 0 0 8px;
-	font-family: 'Lato', sans-serif;
-	font-size: 26px;
-	font-weight: 700;
-	line-height: 1.2;
-	text-transform: none;
+.facebook-posts-panel-header {
+	max-width: 980px;
+	margin: 40px auto 32px;
+	padding-left: 15px;
+	padding-right: 15px;
+	position: relative;
+	z-index: 3;
 }
 
-.facebook-feed-intro {
-	margin: 0 0 12px;
-	font-size: 15px;
-	line-height: 1.4;
-	color: #f0f4ff;
+#home .container.text-center {
+	margin-top: 18px;
 }
 
-.facebook-feed-wrapper {
-	max-width: 500px;
-	margin: 0 auto;
+.facebook-posts-grid {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	margin-left: -14px;
+	margin-right: -14px;
 }
 
-.facebook-feed-wrapper iframe {
+.facebook-post-item {
+	display: flex;
+	width: 50%;
+	margin-bottom: 20px;
+	padding-left: 14px;
+	padding-right: 14px;
+}
+
+.facebook-post-item-third {
+	display: none;
+}
+
+.facebook-post-frame {
+	display: flex;
+	align-items: flex-start;
 	width: 100%;
-	max-width: 500px;
-	min-height: 360px;
-	border-radius: 8px;
+	height: 100%;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 8px;
+	border-radius: 10px;
+	background: #f5f7fb;
+	box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.facebook-post-frame iframe {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	margin: 0 auto;
 	background: #fff;
-}
-
-.facebook-feed-fallback {
-	margin-top: 10px;
-	font-size: 14px;
-}
-
-.facebook-feed-fallback a {
-	color: #fff;
-	text-decoration: underline;
+	border-radius: 8px;
 }
 
 @media (max-width: 767px) {
-	.facebook-feed-panel {
-		margin-top: 16px;
-		padding: 12px;
+	.facebook-posts-panel {
+		margin-top: 26px;
 	}
 
-	.facebook-feed-title {
-		font-size: 22px;
+	.facebook-posts-panel-header {
+		margin: 24px auto 20px;
 	}
 
-	.facebook-feed-intro {
-		font-size: 14px;
+	#home .container.text-center {
+		margin-top: 10px;
 	}
 
-	.facebook-feed-wrapper iframe {
-		min-height: 380px;
+	.facebook-posts-grid {
+		margin-left: -8px;
+		margin-right: -8px;
+	}
+
+	.facebook-post-frame {
+		padding: 6px;
+	}
+
+	.facebook-post-item {
+		width: 50%;
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+
+	#home .container_park {
+		margin-bottom: 18px;
+	}
+}
+
+@media (max-width: 575px) {
+	.facebook-posts-grid {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.facebook-post-item {
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.facebook-post-frame {
+		padding: 6px;
+	}
+}
+
+@media (min-width: 1600px) {
+	.facebook-posts-panel-header {
+		max-width: 1480px;
+	}
+
+	.facebook-post-item {
+		width: 33.3333%;
+	}
+
+	.facebook-post-item-third {
+		display: flex;
+	}
+}
+
+#home .container_park {
+	margin-top: 34px;
+}
+
+@media screen and (max-width: 767px) {
+	#home .container_park {
+		margin-top: 24px;
 	}
 }
