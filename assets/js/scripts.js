@@ -14,8 +14,15 @@ $(document).ready(function() {
 	/*============================================
 	Header
 	==============================================*/
-	
-	$('#home').height($(window).height()+50);
+
+	function syncHomeMinHeight() {
+		$('#home').css({
+			'height': 'auto',
+			'min-height': ($(window).height() + 50) + 'px'
+		});
+	}
+
+	syncHomeMinHeight();
 	
 	$.backstretch('assets/images/header-bg-test4.jpg');
 	
@@ -404,7 +411,7 @@ $(document).ready(function() {
 	var thumbSize = $('.project-item').width();
 	
 	$(window).resize(function(){
-		$('#home').height($(window).height()+50);
+		syncHomeMinHeight();
 		
 		if($('.project-item').width() != thumbSize){
 		

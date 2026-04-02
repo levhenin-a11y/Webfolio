@@ -31,3 +31,70 @@
     background: #30477a;
     color: #fff
 }
+
+.facebook-feed-panel {
+	max-width: 560px;
+	margin: 14px auto 0;
+	padding: 10px 12px;
+	border-radius: 12px;
+	background: rgba(0, 0, 0, 0.32);
+	text-align: center;
+}
+
+.facebook-feed-title {
+	margin: 0 0 8px;
+	font-family: 'Lato', sans-serif;
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 1.2;
+	text-transform: none;
+}
+
+.facebook-feed-intro {
+	margin: 0 0 12px;
+	font-size: 15px;
+	line-height: 1.4;
+	color: #f0f4ff;
+}
+
+.facebook-feed-wrapper {
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.facebook-feed-wrapper iframe {
+	width: 100%;
+	max-width: 500px;
+	min-height: 360px;
+	border-radius: 8px;
+	background: #fff;
+}
+
+.facebook-feed-fallback {
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+.facebook-feed-fallback a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+	.facebook-feed-panel {
+		margin-top: 16px;
+		padding: 12px;
+	}
+
+	.facebook-feed-title {
+		font-size: 22px;
+	}
+
+	.facebook-feed-intro {
+		font-size: 14px;
+	}
+
+	.facebook-feed-wrapper iframe {
+		min-height: 380px;
+	}
+}
