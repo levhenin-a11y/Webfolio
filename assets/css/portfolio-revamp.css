@@ -1,0 +1,117 @@
+#portfolio {
+    position: relative;
+    background: #111 url('../images/header-bg-test1.jpg') center center / cover no-repeat;
+    background-attachment: fixed;
+}
+
+#portfolio::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 12, 16, 0.64);
+}
+
+#portfolio .container,
+#portfolio .masonry-wrapper {
+    position: relative;
+    z-index: 1;
+}
+
+#portfolio .big-text {
+    letter-spacing: 0.04em;
+    color: #f4f7fb;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+}
+
+#portfolio .portfolio-intro {
+    max-width: 760px;
+    margin: 18px auto 28px;
+    color: #d7e0ec;
+    font-size: 1.7rem;
+}
+
+#filter-works ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 0;
+    margin: 0 0 30px;
+    list-style: none;
+}
+
+#filter-works li {
+    float: none;
+    margin: 0;
+}
+
+#filter-works li::after,
+#filter-works li:after {
+    content: none !important;
+    display: none !important;
+}
+
+#filter-works li a {
+    border-radius: 999px;
+    border: 1px solid #9ab0c7;
+    padding: 9px 14px;
+    background: rgba(7, 12, 20, 0.66) !important;
+    color: #edf2f8;
+    text-decoration: none !important;
+    transition: all 0.2s ease;
+}
+
+#filter-works li a:hover,
+#filter-works li a:focus {
+    background-color: var(--brand-accent) !important;
+    color: var(--brand-text) !important;
+    border-color: var(--brand-accent-dark) !important;
+    text-decoration: none !important;
+}
+
+#filter-works li.active a {
+    background-color: var(--brand-accent);
+    color: var(--brand-text);
+    border-color: var(--brand-accent-dark);
+    text-decoration: none;
+}
+
+#projects-container .hover-mask {
+    background: rgba(15, 23, 35, 0.76);
+}
+
+#projects-container .hover-mask p,
+#projects-container .hover-mask .project-title {
+    color: #ffffff;
+}
+
+#projects-container .project-item {
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(21, 31, 44, 0.08);
+}
+
+#projects-container .project-item .project-image {
+    transform: scale(1);
+    transition: transform 0.35s ease;
+}
+
+#projects-container .project-item:hover .project-image {
+    transform: scale(1.03);
+}
+
+@media (max-width: 767px) {
+    #portfolio {
+        background-attachment: scroll;
+    }
+
+    #portfolio .portfolio-intro {
+        font-size: 1.5rem;
+        margin-bottom: 22px;
+        padding: 0 8px;
+    }
+
+    #filter-works li a {
+        padding: 8px 12px;
+    }
+}

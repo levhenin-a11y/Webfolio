@@ -182,7 +182,7 @@ $(document).ready(function() {
 	/*============================================
 	Filter Projects
 	==============================================*/
-	$('#filter-works a').click(function(e){
+	$(document).on('click', '#filter-works a', function(e){
 		e.preventDefault();
 		
 		if($('#project-preview').hasClass('open')){
@@ -201,9 +201,9 @@ $(document).ready(function() {
 			else{
 				$(this).addClass('filtered');
 			}
-
-			$('#projects-container').masonry('reload');
 		});
+
+		$('#projects-container').masonry('reload');
 
 		scrollSpyRefresh();
 		waypointsRefresh();
@@ -212,7 +212,7 @@ $(document).ready(function() {
 	/*============================================
 	Project Preview
 	==============================================*/
-	$('.project-item').click(function(e){
+	$(document).on('click', '.project-item', function(e){
 		e.preventDefault();
 
 		var elem = $(this),
@@ -224,7 +224,7 @@ $(document).ready(function() {
 			slides = elem.find('.project-description').data('images').split(',');
 
 		for (var i = 0; i < slides.length; ++i) {
-			slidesHtml = slidesHtml + '<li><img src='+slides[i]+' alt=""></li>';
+			slidesHtml = slidesHtml + '<li><img src="' + encodeURI(slides[i]) + '" alt=""></li>';
 		}
 		
 		slidesHtml = slidesHtml + '</ul>';
