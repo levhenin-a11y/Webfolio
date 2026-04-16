@@ -54,6 +54,7 @@
 .facebook-posts-grid {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	align-items: stretch;
 	margin-left: -14px;
 	margin-right: -14px;
@@ -61,7 +62,11 @@
 
 .facebook-post-item {
 	display: flex;
+	float: none;
+	justify-content: center;
+	flex: 0 0 50%;
 	width: 50%;
+	max-width: 50%;
 	margin-bottom: 20px;
 	padding-left: 14px;
 	padding-right: 14px;
@@ -76,7 +81,7 @@
 	align-items: flex-start;
 	width: 100%;
 	height: 100%;
-	max-width: 100%;
+	max-width: 500px;
 	margin: 0 auto;
 	padding: 8px;
 	border-radius: 10px;
@@ -116,13 +121,20 @@
 	}
 
 	.facebook-post-item {
-		width: 50%;
+		flex: 0 0 100%;
+		width: 100%;
+		max-width: 100%;
 		padding-left: 8px;
 		padding-right: 8px;
 	}
 
 	#home .container_park {
-		margin-bottom: 18px;
+		margin-top: 8px;
+		margin-bottom: 22px;
+	}
+
+	#home .container_park .share-list {
+		margin-bottom: 7.6rem;
 	}
 }
 
@@ -133,7 +145,9 @@
 	}
 
 	.facebook-post-item {
+		flex: 0 0 100%;
 		width: 100%;
+		max-width: 100%;
 		padding-left: 0;
 		padding-right: 0;
 	}
@@ -149,7 +163,9 @@
 	}
 
 	.facebook-post-item {
+		flex: 0 0 33.3333%;
 		width: 33.3333%;
+		max-width: 33.3333%;
 	}
 
 	.facebook-post-item-third {
@@ -163,6 +179,6 @@
 
 @media screen and (max-width: 767px) {
 	#home .container_park {
-		margin-top: 24px;
+		margin-top: 8px;
 	}
 }
