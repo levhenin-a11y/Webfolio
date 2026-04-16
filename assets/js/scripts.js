@@ -212,6 +212,9 @@ $(document).ready(function() {
 	/*============================================
 	Project Preview
 	==============================================*/
+	var $projectPreview = $('#project-preview');
+	var $projectPreviewHost = $projectPreview.parent();
+
 	$(document).on('click', '.project-item', function(e){
 		e.preventDefault();
 
@@ -239,64 +242,70 @@ $(document).ready(function() {
 
 	function openProject(){
 		
-		$('#project-preview').addClass('open');
-		$('.masonry-wrapper').animate({'opacity':0},300);
-		
-		setTimeout(function(){
-			$('#project-preview').slideDown();
-			$('.masonry-wrapper').slideUp();
-			
-			$('html,body').scrollTo(0,'#filter-works',
-				{
-					gap:{y:-20},
-					animation:{
-						duration:400
-					}
-			});
-			
-			$('#project-slider').flexslider({
-				prevText: '<i class="fa fa-angle-left"></i>',
-				nextText: '<i class="fa fa-angle-right"></i>',
-				animation: 'slide',
-				slideshowSpeed: 3000,
-				useCSS: true,
-				controlNav: true, 
-				pauseOnAction: false, 
-				pauseOnHover: true,
-				smoothHeight: false,
-				start: function(){
-					$(window).trigger('resize');
-					$('#project-preview').animate({'opacity':1},300);
-				}
-			});
-			
-		},300);
+		if (!$projectPreview.parent().is('body')) {
+			$projectPreview.appendTo('body');
+		}
+
+		$projectPreview.addClass('open');
+		$('body').addClass('project-preview-open');
+		$projectPreview.show().animate({'opacity':1},220);
+
+		$('#project-slider').flexslider({
+			prevText: '<i class="fa fa-angle-left"></i>',
+			nextText: '<i class="fa fa-angle-right"></i>',
+			animation: 'slide',
+			directionNav: true,
+			slideshowSpeed: 3000,
+			useCSS: true,
+			touch: true,
+			keyboard: true,
+			controlNav: true, 
+			pauseOnAction: false, 
+			pauseOnHover: true,
+			smoothHeight: false,
+			start: function(){
+				$(window).trigger('resize');
+			}
+		});
 		
 	}
 	
 	function closeProject(){
 	
-		$('#project-preview').removeClass('open');
-		$('#project-preview').animate({'opacity':0},300);
-		
-		setTimeout(function(){
-			$('.masonry-wrapper').slideDown();
-			$('#project-preview').slideUp();
-				
+		$projectPreview.removeClass('open');
+		$projectPreview.animate({'opacity':0},220, function(){
+			$projectPreview.hide();
+			if (!$projectPreview.parent().is($projectPreviewHost)) {
+				$projectPreview.appendTo($projectPreviewHost);
+			}
+		});
+
+		if($('#project-slider').hasClass('flexslider')){
 			$('#project-slider').flexslider('destroy');
-			$('.masonry-wrapper').animate({'opacity':1},300);
-			
-			
-		},300);
-		
+		}
+
+		$('body').removeClass('project-preview-open');
+
 		setTimeout(function(){
 			$('#projects-container').masonry('reload');
-		},500)
+		},260)
 	}
 	
 	$('.close-preview').click(function(){
 		closeProject();
 	})
+
+	$projectPreview.on('click', function(e){
+		if (e.target === this && $(this).hasClass('open')) {
+			closeProject();
+		}
+	});
+
+	$(document).on('keydown', function(e){
+		if (e.key === 'Escape' && $('#project-preview').hasClass('open')) {
+			closeProject();
+		}
+	});
 	
 	/*============================================
 	Twitter
