@@ -24,7 +24,7 @@
 -3 **~~Share buttons UI** - Overlapping with header content; move down or integrate better~~
 -4 **~~Font choices** - Using 2 Google fonts + cursive; simplify to 1-2 web fonts --> OK at the moment~~
 -5 **~~Button styles** - .btn-color1 and .btn-color2 should be one class with modifiers --> OK at the moment~~
--6 **include last publications from Facebook (ma page facebook)** - create an automatically fed carrousel with the 5 last publications
+-6 **~~include last publications from Facebook (ma page facebook)** - create an automatically fed carrousel with the 5 last publications~~
 
 #4 Last Phase:
 
