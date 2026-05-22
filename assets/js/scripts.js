@@ -352,11 +352,36 @@ $(document).ready(function() {
 		$('#project-content').html(descr);
 		$('#project-slider').html(slidesHtml);
 		
-		openProject();
+		openProject(0);
 		
 	});
 
-	function openProject(){
+	$(document).on('click', '.about-photos__grid img', function(e){
+		e.preventDefault();
+
+		var $grid = $(this).closest('.about-photos__grid');
+		var $images = $grid.find('img');
+
+		if (!$images.length) {
+			return;
+		}
+
+		var slidesHtml = '<ul class="slides">';
+		$images.each(function(){
+			var src = $(this).attr('src');
+			slidesHtml = slidesHtml + '<li><img src="' + encodeURI(src) + '" alt=""></li>';
+		});
+		slidesHtml = slidesHtml + '</ul>';
+
+		$('#project-title').text('Biography photos');
+		$('#project-content').html('');
+		$('#project-slider').html(slidesHtml);
+
+		openProject($images.index($(this)));
+	});
+
+	function openProject(startAt){
+		var slideIndex = typeof startAt === 'number' ? startAt : 0;
 		
 		if (!$projectPreview.parent().is('body')) {
 			$projectPreview.appendTo('body');
@@ -370,6 +395,7 @@ $(document).ready(function() {
 			prevText: '<i class="fa fa-angle-left"></i>',
 			nextText: '<i class="fa fa-angle-right"></i>',
 			animation: 'slide',
+			startAt: slideIndex,
 			directionNav: true,
 			slideshowSpeed: 3000,
 			useCSS: true,

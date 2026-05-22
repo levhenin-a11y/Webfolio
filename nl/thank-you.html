@@ -8,6 +8,7 @@
    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/v4-shims.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../assets/css/styles-4.css">
+	<link rel="stylesheet" href="../assets/css/portfolio-revamp.css">
     <style>
         /*this style is specific to thank-you page and is for small screens. STBD: media query to have it worked on desktop*/
         .thank-you-container {
@@ -67,39 +68,39 @@ MAIN NAV
 					</li>
 					<li>
 						<!--whovh + whyvh-->
-						<a href="./index.html#about" class="scrollto">Wie ben ik?</a>
+						<a href="./index.html#about" class="scrollto">Wie Ben Ik?</a>
 					</li>
 					<li>
 						<!--wworks-->
-						<a href="./index.html#portfolio" class="scrollto">Mijn Werk</a>
+						<a href="./index.html#portfolio" class="scrollto">Werk</a>
 					</li>
 					<li>
 						<!--rewards-->
-						<a href="./index.html#rewards" class="scrollto">Mijn Prijzen</a>
+						<a href="./index.html#rewards" class="scrollto">Prijzen</a>
 					</li>
 					<li>
 						<!--skills-->
-						<a href="./index.html#skills" class="scrollto">Mijn Bekwaamheden</a>
+						<a href="./index.html#skills" class="scrollto">Bekwaamheden</a>
 					</li>
 					<li>
 						<!--patrons-->
-						<a href="./index.html#patrons" class="scrollto">Partners</a>
+						<a href="./index.html#patrons" class="scrollto">Klanten</a>
 					</li>
 					<li>
 						<a href="./index.html#links" class="scrollto">Links</a>
 					</li>
 					<li>
-						<a href="./index.html#visual_thinking" class="scrollto">Visual Thinking</a>
+						<a href="./index.html#visual_thinking" class="scrollto">Graphic Recording</a>
 					</li>
 					<li>
 						<a href="./index.html#contact" class="scrollto">Contact</a>
 					</li>
-					<li>
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLanguages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="navbarDropdownMenuLanguages"><span class="flag-icon flag-icon-fr">&nbsp;</span>&nbsp;Nederlands&nbsp;<span class="fa fa-chevron-down"></span></a>
+					<li class="nav-lang-switch">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLanguages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="navbarDropdownMenuLanguages"><span class="flag-icon flag-icon-nl">&nbsp;</span>&nbsp;Nederlands&nbsp;<span class="fa fa-chevron-down"></span></a>
 						<div class="dropdown-menu" id="navbarDropdownMenuLanguages" aria-labelledby="navbarDropdownLanguages">
-							<a class="dropdown-item" href="../en/index.html"><span class="flag-icon flag-icon-us">&nbsp;</span><span class="lang-in-menu">Engels</span></a>
+							<a class="dropdown-item" href="../index.html"><span class="flag-icon flag-icon-fr">&nbsp;</span><span class="lang-in-menu">Français</span></a>
 							<br/>
-                        	<a class="dropdown-item" href="../fr/index.html"><span class="flag-icon flag-icon-fr">&nbsp;</span><span class="lang-in-menu">FranÃ§ais</span></a>
+					        	<a class="dropdown-item" href="../en/index.html"><span class="flag-icon flag-icon-us">&nbsp;</span><span class="lang-in-menu">English</span></a>
 						</div>
 					</li>
                 </ul>
@@ -111,11 +112,11 @@ MAIN NAV
 	</div><!--End main-nav -->
     <div class="thank-you-container">
         <div class="thank-you-content">
-            <div class="thank-you-icon">âœ“</div>
+			<div class="thank-you-icon">&#10003;</div>
 			<h1>Bedankt voor je bericht!</h1>
 			<p class="lead">Je bericht is succesvol verzonden. Ik neem zo snel mogelijk contact met je op.</p>
 			<p>Controleer je inbox voor een bevestiging.</p>
-			<a href="index.html" class="btn btn-color2 thank-you-back-link">â† Terug naar home</a>
+			<a href="index.html" class="btn btn-color2 thank-you-back-link">&larr; Terug naar home</a>
         </div>
     </div>
     <footer id="main-footer" class="add-padding bg-color3 border-top-color2">
@@ -123,18 +124,16 @@ MAIN NAV
 			<div class="container">
 			
 				<ul class="social-links text-center">
-					<li class="fi_canalblog"><a href="http://vhenin.canalblog.com/" title="Vhenins blog" target="_blank"><i class="fa fa-paper-plane-o fa-fw"></i></a></li>
-					<li class="fi_gooplus"><a href="https://visualthinkers.eu/" title="Bezoek VisualThinkers.eu" target="_blank"><i class="fa fa-lightbulb-o fa-fw"></i></a></li>
 					<li class="fi_linkedin"><a href="https://www.linkedin.com/in/vincent-henin-665326142/" title="Vincent Henin op LinkedIn" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a></li>
 					<li class="fi_facebook"><a href="https://www.facebook.com/vincenthenin.comixillustration" title="Vhenin op Facebook" target="_blank"><i class="fa fa-facebook fa-fw"></i></a></li>
 					<li class="fi_youtube"><a href="https://www.youtube.com/channel/UCFgRf_TU8ES5LJNMaKOr8Eg" title="Timelapses van Blateman en Bobine" target="_blank"><i class="fa fa-youtube fa-fw"></i></a></li>
-					<li class="fi_youtube"><a href="http://vhenin.canalblog.com/archives/blateman___bobine/index.html" title="Stripverhalen van Blateman en Bobine" target="_blank"><i class="fa fa-bolt fa-fw"></i></a></li>
+					<li class="fi_blateman"><a href="https://blateman-bobine.com/nl/" title="De reeks Blateman & Bobine" target="_blank"><i class="fa fa-bolt fa-fw"></i></a></li>
 				</ul>
 			
 				<p class="text-center">&copy; <script type="text/javascript">
 					var d=new Date();
 					document.write(d.getFullYear());
-					</script> - Alle rechten voorbehouden&nbsp;&nbsp;//&nbsp;&nbsp;<a href="#">Vincent Henin - Vhenin</a></p>
+					</script> - Alle rechten voorbehouden&nbsp;&nbsp;//&nbsp;&nbsp;Vincent Henin - Vhenin</p>
 			
 			</div>
 			

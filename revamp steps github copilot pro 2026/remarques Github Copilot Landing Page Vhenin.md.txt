@@ -37,13 +37,13 @@
 
 #5 Manual Changes:
 
--1 Restructure the site : keep / remove / redo
+-1 ~~Restructure the site : keep / remove / redo~~
 -2 ~~Solve the Gallery issue: find an automatic way to feed galleries via script taking the content in a folder. Make Gallery accessible and compliant on all devices.~~
 -3 ~~Update / Add / Remove Skills~~
 -4 ~~Change top menu: Who Am I / -My- Work / -My- Awards / -My- Skills / -My- Partners / -My- Links / Contact~~
--5 Update Partners (Thys, ABA Academy ...)
--6 Add a portrait of me in Header?
+-5 ~~Update Partners (Thys, ABA Academy ...)~~
+-6 ~~Add a portrait of me in Header? >> NO~~
 -7 ~~Footer: remove visual Thinking, Canalblog ...~~
--8 Change text Links > Blateman & Bobine
+-8 ~~Change text Links > Blateman & Bobine~~
 -9 Put accent as well on frontend dev / UI-UX expert: in the header and Gallery
 -10 ~~Create a label design for gallery topic filters~~

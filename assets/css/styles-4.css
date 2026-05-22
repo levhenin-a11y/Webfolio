@@ -610,6 +610,36 @@ font-size: 22px;
     transform: rotate(-5deg);
 }
 
+.about-photos {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.about-photos h3 {
+    margin: 6rem 0 12px;
+    font-size: 36px;
+    line-height: 1;
+}
+
+.about-photos__grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+}
+
+.about-photos__grid img {
+    display: block;
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+#bio-details {
+    margin-top: 2rem;
+}
+
 .medal{
 	background-image: url(../images/medal.png);
     height: 30px;
@@ -1291,6 +1321,8 @@ span.fa-star, span.fa-star-half-o, span.fa-star-o {
 }
 
 .social-links {
+    width: 100%;
+    margin-top: 20px;
     list-style:none;
     margin:0;
     padding:0;
