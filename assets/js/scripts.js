@@ -248,7 +248,10 @@ $(document).ready(function() {
 	ScrollTo Links
 	==============================================*/
 	$('a.scrollto').click(function(e){
-		$('html,body').scrollTo(this.hash, this.hash, {gap:{y:-70}});
+		var navHeight = $('#main-nav').outerHeight() || 0;
+		var anchorGap = navHeight + 5;
+
+		$('html,body').scrollTo(this.hash, this.hash, {gap:{y:-anchorGap}});
 		e.preventDefault();
 
 		if ($('.navbar-collapse').hasClass('in')){

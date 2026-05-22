@@ -184,7 +184,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 -------------------------*/
 
 .add-padding {
-    padding-top:120px;
+    padding-top:80px;
     padding-bottom:140px;
 }
 
@@ -700,7 +700,7 @@ span.fa-star, span.fa-star-half-o, span.fa-star-o {
 -------------------------*/
 
 #portfolio{
-    padding-top:70px;
+    padding-top:30px;
     background:url('../images/header-bg-test1.jpg') no-repeat #4b559a fixed;/*before #B5BAE0*/
     background-size:cover;
     color:#fff;
@@ -1550,6 +1550,15 @@ div.fi_linkedin:hover, .social-links li.fi_linkedin a:hover{
 } 
 
 @media (max-width:767px){
+    /* anchor offset for fixed top nav */
+    .add-padding {
+        padding-top:59px;
+        padding-bottom:60px;
+    }
+
+    section[id] {
+        scroll-margin-top: 59px;
+    }
 	/*////for switch language////*/
 	.navbar-nav .open .dropdown-menu {
     /*position: absolute;
@@ -1589,11 +1598,6 @@ div.fi_linkedin:hover, .social-links li.fi_linkedin a:hover{
     .lead{
       font-size:16px;
       font-weight:400;
-    }
-    
-    .add-padding {
-        padding-top:60px;
-        padding-bottom:60px;
     }
     
     .big-text{
