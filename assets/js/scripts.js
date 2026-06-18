@@ -250,9 +250,24 @@ $(document).ready(function() {
 	$('a.scrollto').click(function(e){
 		var navHeight = $('#main-nav').outerHeight() || 0;
 		var anchorGap = navHeight + 5;
+		var galleryFilter = $(this).attr('data-gallery-filter');
 
 		$('html,body').scrollTo(this.hash, this.hash, {gap:{y:-anchorGap}});
 		e.preventDefault();
+
+		if (galleryFilter) {
+			setTimeout(function(){
+				var $filterLink = $('#filter-works a[data-filter="' + galleryFilter + '"]').first();
+
+				if (!$filterLink.length && galleryFilter === '.cat-graphic-recording') {
+					$filterLink = $('#filter-works a[data-filter=".GF"], #filter-works a[data-filter=".graphic-recording"]').first();
+				}
+
+				if ($filterLink.length) {
+					$filterLink.trigger('click');
+				}
+			}, 250);
+		}
 
 		if ($('.navbar-collapse').hasClass('in')){
 			$('.navbar-collapse').removeClass('in').addClass('collapse');
