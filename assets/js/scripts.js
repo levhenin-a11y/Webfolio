@@ -338,12 +338,30 @@ $(document).ready(function() {
 			title = elem.find('.project-title').text(),
 			descr = elem.find('.project-description').html(),
 			slidesHtml = '<ul class="slides">',
-			elemDataCont = elem.find('.project-description');
-
-			slides = elem.find('.project-description').data('images').split(',');
+			elemDataCont = elem.find('.project-description'),
+			imagesData = elemDataCont.data('images'),
+			videosData = elemDataCont.data('videos'),
+			slides = imagesData ? String(imagesData).split(',') : [],
+			videos = videosData ? String(videosData).split(',') : [];
 
 		for (var i = 0; i < slides.length; ++i) {
-			slidesHtml = slidesHtml + '<li><img src="' + encodeURI(slides[i]) + '" alt=""></li>';
+			var imageSrc = $.trim(slides[i]);
+
+			if (!imageSrc) {
+				continue;
+			}
+
+			slidesHtml = slidesHtml + '<li><img src="' + encodeURI(imageSrc) + '" alt=""></li>';
+		}
+
+		for (var j = 0; j < videos.length; ++j) {
+			var videoSrc = $.trim(videos[j]);
+
+			if (!videoSrc) {
+				continue;
+			}
+
+			slidesHtml = slidesHtml + '<li><video class="project-slide-video" controls preload="metadata" playsinline><source src="' + encodeURI(videoSrc) + '" type="video/mp4">Your browser does not support the video tag.</video></li>';
 		}
 		
 		slidesHtml = slidesHtml + '</ul>';
@@ -380,8 +398,54 @@ $(document).ready(function() {
 		openProject($images.index($(this)));
 	});
 
+	function bindPreviewVideoInteractions() {
+		$('#project-slider').find('.project-slide-video').each(function(){
+			var videoElement = this;
+
+			if (videoElement._previewVideoInteractionBound) {
+				return;
+			}
+
+			videoElement._previewVideoInteractionBound = true;
+			videoElement._lastTouchToggleAt = 0;
+			videoElement.style.touchAction = 'manipulation';
+
+			var stopSliderGesture = function(event) {
+				event.stopPropagation();
+			};
+
+			var activateVideo = function(event) {
+				var isTouchLike = event.type === 'touchend' || event.type === 'MSPointerUp' || (event.type === 'pointerup' && event.pointerType !== 'mouse');
+
+				if (!isTouchLike && Date.now() - videoElement._lastTouchToggleAt < 500) {
+					return;
+				}
+
+				event.preventDefault();
+				event.stopPropagation();
+
+				if (isTouchLike) {
+					videoElement._lastTouchToggleAt = Date.now();
+				}
+
+				togglePreviewVideoPlayback(videoElement);
+			};
+
+			videoElement.addEventListener('touchstart', stopSliderGesture, false);
+			videoElement.addEventListener('touchmove', stopSliderGesture, false);
+			videoElement.addEventListener('touchend', activateVideo, false);
+			videoElement.addEventListener('pointerdown', stopSliderGesture, false);
+			videoElement.addEventListener('pointerup', activateVideo, false);
+			videoElement.addEventListener('MSPointerDown', stopSliderGesture, false);
+			videoElement.addEventListener('MSPointerUp', activateVideo, false);
+			videoElement.addEventListener('click', activateVideo, false);
+		});
+	}
+
 	function openProject(startAt){
 		var slideIndex = typeof startAt === 'number' ? startAt : 0;
+		var hasVideoSlides = $('#project-slider').find('video').length > 0;
+		bindPreviewVideoInteractions();
 		
 		if (!$projectPreview.parent().is('body')) {
 			$projectPreview.appendTo('body');
@@ -395,6 +459,7 @@ $(document).ready(function() {
 			prevText: '<i class="fa fa-angle-left"></i>',
 			nextText: '<i class="fa fa-angle-right"></i>',
 			animation: 'slide',
+			video: hasVideoSlides,
 			startAt: slideIndex,
 			directionNav: true,
 			slideshowSpeed: 3000,
@@ -406,6 +471,7 @@ $(document).ready(function() {
 			pauseOnHover: true,
 			smoothHeight: false,
 			start: function(){
+				bindPreviewVideoInteractions();
 				$(window).trigger('resize');
 			}
 		});
@@ -436,6 +502,21 @@ $(document).ready(function() {
 	$('.close-preview').click(function(){
 		closeProject();
 	})
+
+	function togglePreviewVideoPlayback(videoElement) {
+		if (!videoElement) {
+			return;
+		}
+
+		if (videoElement.paused) {
+			var playPromise = videoElement.play();
+			if (playPromise && typeof playPromise.catch === 'function') {
+				playPromise.catch(function(){});
+			}
+		} else {
+			videoElement.pause();
+		}
+	}
 
 	$projectPreview.on('click', function(e){
 		if (e.target === this && $(this).hasClass('open')) {

@@ -55,9 +55,11 @@
             var subtitle = escapeHtml(item.subtitle || 'Galerie');
             var thumb = item.thumb || '';
             var images = $.isArray(item.images) ? item.images.join(',') : '';
+            var videos = $.isArray(item.videos) ? item.videos.join(',') : '';
             var description = escapeHtml(item.description || 'Galerie generee automatiquement.');
             var visibleCount = item.visibleImages || ($.isArray(item.images) ? item.images.length : 0);
             var totalCount = item.totalImagesInFolder || visibleCount;
+            var visibleVideos = item.visibleVideos || ($.isArray(item.videos) ? item.videos.length : 0);
 
             if (!thumb || !images) {
                 return;
@@ -69,9 +71,12 @@
             html += '<h2 class="project-title">' + title + '</h2>';
             html += '<p>' + subtitle + '</p>';
             html += '</div>';
-            html += '<div class="sr-only project-description" data-images="' + escapeHtml(images) + '">';
+            html += '<div class="sr-only project-description" data-images="' + escapeHtml(images) + '" data-videos="' + escapeHtml(videos) + '">';
             html += '<p>' + description + '</p>';
             html += '<p><strong>' + visibleCount + ' image(s) affichee(s) sur ' + totalCount + ' dans le dossier.</strong></p>';
+            if (visibleVideos > 0) {
+                html += '<p><strong>' + visibleVideos + ' video(s) disponible(s).</strong></p>';
+            }
             html += '</div>';
             html += '</article>';
         });

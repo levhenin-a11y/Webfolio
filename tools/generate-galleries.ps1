@@ -20,6 +20,7 @@ if (-not (Test-Path $configAbsolute)) {
 }
 
 $imageExtensions = @("*.jpg", "*.jpeg", "*.png", "*.webp", "*.gif")
+$videoExtensions = @("*.mp4", "*.webm", "*.mov")
 $config = Get-Content -Path $configAbsolute -Raw -Encoding UTF8 | ConvertFrom-Json
 
 if (-not $config.filters -or -not $config.folders) {
@@ -51,6 +52,44 @@ function Get-FilterClass {
     param([string]$FilterKey)
 
     return "cat-$(Get-Slug -Name $FilterKey)"
+}
+
+function Normalize-ConfiguredAssetPath {
+    param(
+        [string]$AssetPath,
+        [string]$FolderName,
+        [string]$BaseRoot,
+        [string]$PixRoot
+    )
+
+    if ([string]::IsNullOrWhiteSpace($AssetPath)) {
+        return $null
+    }
+
+    $trimmedPath = $AssetPath.Trim()
+
+    if ([System.IO.Path]::IsPathRooted($trimmedPath) -and (Test-Path $trimmedPath)) {
+        return Get-RelativeWebPath -AbsolutePath $trimmedPath -BasePath $BaseRoot
+    }
+
+    $normalizedPath = $trimmedPath -replace '\\', '/'
+    $normalizedPath = $normalizedPath.TrimStart('/')
+
+    if ($normalizedPath.StartsWith('pix/')) {
+        return $normalizedPath
+    }
+
+    if ($normalizedPath.StartsWith("$FolderName/")) {
+        return "pix/$normalizedPath"
+    }
+
+    if ($normalizedPath.StartsWith('video/') -or $normalizedPath.StartsWith('./video/')) {
+        $relativeVideo = $normalizedPath.TrimStart('.')
+        $relativeVideo = $relativeVideo.TrimStart('/')
+        return "$PixRoot/$FolderName/$relativeVideo"
+    }
+
+    return $normalizedPath
 }
 
 $folders = Get-ChildItem -Path $pixAbsolute -Directory | Sort-Object Name
@@ -87,6 +126,8 @@ $skippedFolders = @()
 foreach ($folder in $folders) {
     $folderImages = Get-ChildItem -Path $folder.FullName -File -Recurse -Include $imageExtensions -ErrorAction SilentlyContinue |
         Sort-Object FullName
+    $folderVideos = Get-ChildItem -Path $folder.FullName -File -Recurse -Include $videoExtensions -ErrorAction SilentlyContinue |
+        Sort-Object FullName
 
     if (-not $folderImages -or $folderImages.Count -eq 0) {
         continue
@@ -108,6 +149,26 @@ foreach ($folder in $folders) {
 
     $selectedImages = $folderImages | Select-Object -First $MaxImagesPerGallery
     $imagePaths = @($selectedImages | ForEach-Object { Get-RelativeWebPath -AbsolutePath $_.FullName -BasePath $root })
+    $videoPaths = @()
+
+    if ($folderConfigValue.PSObject.Properties['videos'] -and $folderConfigValue.videos) {
+        $configuredVideos = @()
+
+        if ($folderConfigValue.videos -is [System.Array]) {
+            $configuredVideos = $folderConfigValue.videos
+        } else {
+            $configuredVideos = @($folderConfigValue.videos)
+        }
+
+        $videoPaths = @(
+            $configuredVideos |
+                ForEach-Object { Normalize-ConfiguredAssetPath -AssetPath $_ -FolderName $folderName -BaseRoot $root -PixRoot $PixPath } |
+                Where-Object { -not [string]::IsNullOrWhiteSpace($_) }
+        )
+    } else {
+        $videoPaths = @($folderVideos | ForEach-Object { Get-RelativeWebPath -AbsolutePath $_.FullName -BasePath $root })
+    }
+
     $thumbPath = if (-not [string]::IsNullOrWhiteSpace($folderConfigValue.thumb)) { $folderConfigValue.thumb } else { $imagePaths[0] }
     $folderClasses = @()
 
@@ -131,9 +192,12 @@ foreach ($folder in $folders) {
         classes = $folderClasses
         thumb = $thumbPath
         images = $imagePaths
+        videos = $videoPaths
         description = $description
         totalImagesInFolder = $folderImages.Count
         visibleImages = $selectedImages.Count
+        totalVideosInFolder = $videoPaths.Count
+        visibleVideos = $videoPaths.Count
     }
 }
 
