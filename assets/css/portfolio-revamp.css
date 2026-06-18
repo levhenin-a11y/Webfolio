@@ -570,14 +570,15 @@ body.project-preview-open .masonry-wrapper {
         right: 10px;
     }
 
-    #project-slider .slides > li,
-    #project-slider .slides img {
-        max-height: min(75dvh, 560px);
+    #project-slider .slides > li {
         min-height: min(75dvh, 560px);
+        max-height: none;
+        padding-bottom: 0;
     }
 
-    #project-slider .slides > li {
-        padding-bottom: 10px;
+    #project-slider .slides img {
+        max-height: min(75dvh, 560px);
+        min-height: auto;
     }
 
     #project-slider .flex-control-nav {
@@ -600,7 +601,9 @@ body.project-preview-open .masonry-wrapper {
 
     #project-slider .slides video,
     #project-slider .slides .project-slide-video {
-        max-height: min(75dvh, 560px);
+        width: auto;
+        max-width: 100%;
+        max-height: min(calc(75dvh - 34px), 520px);
     }
 
     #project-slider .flex-direction-nav a {

@@ -64,9 +64,9 @@
       "description": "Selection de créations 3D personnelles et pour clients.",
       "thumb": "assets/images/thumb_3D.png",
       "videos": [
-        "pix/3D/video/3D-Video-01.mp4",
-        "pix/3D/video/3D-Video-02.mp4",
-        "pix/3D/video/3D-Video-03.mp4"
+        "pix/3D/3D-Video-01.mp4",
+        "pix/3D/3D-Video-02.mp4",
+        "pix/3D/3D-Video-03.mp4"
       ],
       "filters": ["3d", "graphisme"]
     },

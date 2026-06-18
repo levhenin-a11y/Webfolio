@@ -1,5 +1,5 @@
 ﻿{
-    "generatedAt":  "2026-06-18 16:08:58",
+    "generatedAt":  "2026-06-18 17:06:25",
     "source":  "pix",
     "config":  "tools/gallery-config.fr.json",
     "maxImagesPerGallery":  30,
@@ -104,9 +104,9 @@
                                      "pix/3D/3D_10.jpg"
                                  ],
                       "videos":  [
-                                     "pix/3D/video/3D-Video-01.mp4",
-                                     "pix/3D/video/3D-Video-02.mp4",
-                                     "pix/3D/video/3D-Video-03.mp4"
+                                     "pix/3D/3D-Video-01.mp4",
+                                     "pix/3D/3D-Video-02.mp4",
+                                     "pix/3D/3D-Video-03.mp4"
                                  ],
                       "description":  "Selection de créations 3D personnelles et pour clients.",
                       "totalImagesInFolder":  10,
@@ -178,7 +178,6 @@
                       "images":  [
                                      "pix/BB1/00-mockups-T1-T2.jpg",
                                      "pix/BB1/almost-there-expo-blateman-bobine-03.jpg",
-                                     "pix/BB1/BB_logotype.png",
                                      "pix/BB1/BB01_p01-copy.jpg",
                                      "pix/BB1/BB01_p02-copy.jpg",
                                      "pix/BB1/BB01_p03-copy.jpg",
@@ -205,8 +204,8 @@
                                      "pix/BB1/Blateman-Bobine-Official-Release-10March2025-WEB.mp4"
                                  ],
                       "description":  "Blateman \u0026 Bobine, les super-(z)héros préférés des enfants! Découvrez leurs aventures éditées chez ABA Academy...",
-                      "totalImagesInFolder":  23,
-                      "visibleImages":  23,
+                      "totalImagesInFolder":  22,
+                      "visibleImages":  22,
                       "totalVideosInFolder":  2,
                       "visibleVideos":  2
                   },
@@ -255,14 +254,13 @@
                                  ],
                       "videos":  [
                                      "pix/BB2/Blateman-Bobine-2-New-Albums-WEB.mp4",
-                                     "pix/BB2/Blateman-Bobine-Official-Release-10March2025.mp4",
                                      "pix/BB2/Blateman-Bobine-Official-Release-10March2025-WEB.mp4"
                                  ],
                       "description":  "Blateman \u0026 Bobine, les super-(z)héros préférés des enfants! Découvrez leurs aventures éditées chez ABA Academy...",
                       "totalImagesInFolder":  31,
                       "visibleImages":  30,
-                      "totalVideosInFolder":  3,
-                      "visibleVideos":  3
+                      "totalVideosInFolder":  2,
+                      "visibleVideos":  2
                   },
                   {
                       "id":  "bc",
